@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* IR 효과 */
+		.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;}
+		/* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+
+		.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100px;}
+		/* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+
+		.ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;}
+		/* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 (Screen Out) */
+
+		* a 링크 초기화 */
+		a {color:  #222; text-decoration: none;}
+
+		ul {list-style:none;}
+
+		.gallery {position: relative; border: 1px solid #ccc; width: 287px; height: 250px; overflow: hidden;}
+		.gallery h4 {padding-left: 15px; color: blue;}
+		.gallery_btn {position: absolute; top: 5px; right: 5px;}
+		.gallery_btn ul {overflow: hidden;}
+		.gallery_btn li {float: left;padding-right: 3px; }
+		.gallery_btn li a {width: 23px; height: 23px; display: block; background: url(img/icon.png) no-repeat;}
+		.gallery_btn li a.icon01 {background-position: -150px -120px;}
+		.gallery_btn li.icon02 a {background-position: -150px -143px;}
+		.gallery_btn li.icon03 a {background-position: -150px -166px;}
+		.gallery_btn li.icon04 a {background-position: -150px -189px;}
+		.gallery_btn li a.icon01:hover {background-position: -173px -120px;}
+		.gallery_btn li.icon02 a:hover {background-position: -173px -143px;}
+		.gallery_btn li.icon03 a:hover {background-position: -173px -166px;}
+		.gallery_btn li.icon04 a:hover {background-position: -173px -189px;}
+		
+		.gallery_img img {width:100%;}
+
+	</style>
+</head>
+<body>
+	<div class="gallery">
+		<h4>포트폴리오</h4>
+		<div class="gallery_btn">
+			<ul>
+				<li><a href="#" class="icon01" ><span class="ir_so">시작</span></a></li>
+				<li class="icon02"><a href="#" ><span class="ir_so">정지</span></a></li>
+				<li class="icon03"><a href="#" ><span class="ir_so">다음이미지</span></a></li>
+				<li class="icon04"><a href="#" ><span class="ir_so">이전이미지</span></a></li>
+			</ul>
+		</div>
+		<div class="gallery_img">
+			<ul>
+				<li><a href="#"><img src="img/gallery01.jpg" alt=""></a></li>
+				<li><a href="#"><img src="img/gallery02.jpg" alt=""></a></li>
+				<li><a href="#"><img src="img/gallery03.jpg" alt=""></a></li>
+				<li><a href="#"><img src="img/gallery04.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	
+</body>
+</html>

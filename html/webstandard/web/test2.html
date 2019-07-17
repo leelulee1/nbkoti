@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		* {margin: 0; padding:0;}
+
+		/* 블릿기호  초기화 */
+		 ul  {list-style: none;}
+
+		#wrap {width: 1300px; height: 300px; margin: 0 auto; overflow: hidden;}
+		.container_left {width: 600px; height: 300px; float: left; position: relative; border-right: 1px solid #333;}
+		.container_left h4 {font-size: 30px; font-weight: 800; padding: 30px; }
+		.container_left ul {}
+		.container_left li {font-size: 14px; padding: 20px 0 5px 30px; overflow: hidden;}
+		.container_left li a {width: 60%; float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+		.container_left li span {width: 30%; float: right; text-align: center;}
+		.container_left a.more {position: absolute; top: 40px; right: 30px;}
+		
+		.container_right {width: 600px; height: 300px; float: left; position: relative; }
+		.container_right h4 {font-size: 30px; font-weight: 800; padding: 30px; }
+		.container_right ul {}
+		.container_right li {font-size: 14px; padding: 20px 0 5px 30px; overflow: hidden;}
+		.container_right li  a {width: 60%; float: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+		.container_right li  a img {padding-right: 5px;}
+		.container_right li span {width: 30%; float: right; text-align: center;}
+		.container_right a.more {position: absolute; top: 40px; right: 30px;}
+
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="container_left">
+			<h4>TOAST Meetup!</h4>
+				 <ul>
+				 	<li><a href="#">크롬 네이티브 레이지 로딩</a><span>2019. 05. 22</span></li>
+			    	<li><a href="#">타입 스크립트에서 Vue 컴포넌트를 개발하는 방법</a><span>2019. 05. 22</span></li>
+			    	<li><a href="#">AngularJS에서 Vue로 전환하면서 배운 것</a><span>2019. 05. 22</span></li>
+			    	<li><a href="#">실용적인 프론트엔드 테스트 전략 (3)</a><span>2019. 05. 22</span></li>
+				 </ul>
+				 <a href="#" alt="더보기" class="more"><img src="img/arrow.jpg" alt=""></a>
+		</div>
+		<p></p>
+		<div class="container_right">
+			<h4>서비스 공지</h4>
+				 <ul>
+				 	<li><a href="#"><img src="img/bt01.jpg" alt="">[보안동향공지] MySQL을 이용한 랜섬웨어 공격동향 및 대응방법 이용한 랜섬웨어 공격동향 및 대응방법</a><span>2019. 06. 03</span></li>
+			    	<li><a href="#"><img src="img/bt01.jpg" alt="">[TOAST FORWARD] 자바스크립트 OOP 꼭꼭 씹어 먹기 자바스크립트 OOP 꼭꼭 씹어 먹기</a><span>2019. 05. 28</span></li>
+			    	<li><a href="#"><img src="img/bt02.jpg" alt="">[JP Region]Compute & Network 점검 안내[JP Region]Compute & Network 점검 안내</a><span>2019. 05. 24</span></li>
+			    	<li><a href="#"><img src="img/bt01.jpg" alt="">Secure Key Manager 신규 출시 및 u2 Instance 정책 변경 안내Secure Key Manager 신규 출시 및 u2 Instance</a><span>2019. 05. 24</span></li>
+				 </ul>
+				 <a href="#" alt="더보기" class="more"><img src="img/arrow.jpg" alt=""></a>
+		</div>
+	</div>
+	
+</body>
+</html>

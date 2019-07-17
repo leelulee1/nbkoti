@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>ANIMATION-지성재성</title>
+
+    <!-- web_font -->
+    <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/prism.css" rel="stylesheet">
+
+    <!-- Prettify -->
+    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/ico/icon_57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/icon_114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/icon_72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/icon_144.png">
+
+    <!-- hmlt5 support -->
+    <!--[if lt IE 9]><script src="../assets/js/html5shiv.js"></script><![endif]-->
+
+    <!-- IE6,7 support -->
+    <!--[if lte IE 7]><link rel="stylesheet" href="comm/css/ie7.css" type="text/css" ><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="comm/css/ie8.css" type="text/css" ><![endif]-->
+
+    <!--[if lte IE 6]>
+        <p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+            사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+            <a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+            <a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a>
+            <a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+            <a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+            <a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a></p>
+            <![endif]-->
+    <style>
+        .face {
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+        }
+
+        .face img {
+            width: 400px;
+            border-radius: 50%;
+        }
+
+        .face1 img {
+            width: 22%;
+            border-radius: 10%;
+            margin: 1%;
+        }
+
+        .member {
+            margin: 50px 0;
+        }
+
+        .member li {
+            width: 150px;
+            list-style: none;
+            display: inline-block;
+            margin: 6px;
+        }
+
+        .member li img {
+            border-radius: 50%;
+        }
+
+        table em {
+            border: 1px solid #000;
+            font-style: normal;
+            font-size: 80%;
+            padding: 3px;
+            border-radius: 3px;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            font-weight:400;
+        }
+        h2 { 
+            color: #3098CE; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="top-nav" class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="http://leelulee1.dothome.co.kr" target="_blank">지성재성</a></li>
+                        <li><a href="https://nbkoti.tistory.com/" target="_blank">tistory</a></li>
+                        <li><a href="https://codepen.io/laudpmvf/" target="_blank">codepen</a></li>
+                        <li><a href="https://dribbble.com/nbkoti" target="_blank">dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //nav -->
+
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="span12" style="text-align:center;">
+                        <div class="header_tit">
+                            <p><img src="../assets/img/cha.png" alt=""></p>
+                            <h1>Professional web publishers</h1>
+                            <!---h2><a href="http://leelulee1.dothome.co.kr">지성재성</a></h2-->
+                        </div>
+                        <!----div class="header_icon">
+                            <ul>
+                                <li class="icon_tit1"><a href="www.facebook.com" title="facebook" target="_blank"><img src="assets/img/icon_f.png" alt=""><span class="ir_so">페이스북</span></a></li>
+                                <li class="icon_tit2"><a href="www.twitter.com" title="twitter" target="_blank"><img src="assets/img/icon_t.png" alt=""><span class="ir_so">트위터</span></a></li>
+                                <li class="icon_tit3"><a href="www.instagram.com" title="instagram" target="_blank"><img src="assets/img/icon_i.png" alt=""><span class="ir_so">인스타그램</span></a></li>
+                                <li class="icon_tit4"><a href="www.vlive.tv" title="v_app" target="_blank"><img src="assets/img/icon_v.png" alt=""><span class="ir_so">브이앱</span></a></li>
+                            </ul>
+                        </div-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="container" style="margin-top:20px;">
+        <div class="row-fluid">
+            <div class="span12">
+                <h1>Animation</h1>
+
+                <br>
+                <h2>Animation</h2>
+                <div class="well">animation : {name} {duration} {timing-function} {delay} {iteration-count} {direction} {fill-mode} {play-state}</div>
+
+                <table class="table table-stripid table-border table-hover">
+                    <thead>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>animation-name</td>
+                            <td>@keyframes에 지정된 이름을 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>animation-duration</td>
+                            <td>애니메이션이 실행되는 시간을 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>animation-timing-function</td>
+                            <td>애니메이션이 키프레임 움직임을 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>animation-delay</td>
+                            <td>애니메이션이 로드된 후 애니메이션이 시작될 때 까지의 시간을 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>animation-iteration-count</td>
+                            <td>애니메이션이 반복 횟수를 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>animation-direction</td>
+                            <td>애니메이션의 방향을 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>animation-fill-mode</td>
+                            <td>애니메이션이 끝난 후의 상태를 설정합니다.</td>
+                        </tr>
+                        <tr>
+                            <td>animation-play-state</td>
+                            <td>애니메이션의 진행 상태를 설정합니다.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br>
+                <h2>timing-function</h2>
+                <table class="table table-stripid table-border table-hover">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>linear</td>
+                                <td>일정한 간격으로 움직입니다.</td>
+                            </tr>
+                            <tr>
+                                <td>ease</td>
+                                <td>처음에 서서히 가속하고 마지막 부분에서 급격히 감속합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>ease-in</td>
+                                <td>처음에 천천히 시작하고 마지막에 가속합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>ease-out</td>
+                                <td>처음에 최대 속도로 시작하고 마지막에 감속합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>ease-in-out</td>
+                                <td>처음에는 제로 속도에서 시작하고 중간시점에서 최고 속도로 움직이고, 마지막 부분에서 서서히 감속합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>step-start</td>
+                                <td>애니메이션이 시작점에서만 표현됩니다.</td>
+                            </tr>
+                            <tr>
+                                <td>step-end</td>
+                                <td>애니메이션이 끝점에서만 표현됩니다.</td>
+                            </tr>
+                            <tr>
+                                <td>steps(ints, start/end)</td>
+                                <td>애니메이션 단계별로 표현합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>cubic-bezier(n,n,n,n)</td>
+                                <td>베이지 곡선 값을 만들어서 속도를 설정합니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                <br>
+                <h2>Transition</h2>
+                <div class="well">transition : {property} {duration} {timing-fuction} {delay}</div>
+                <table class="table table-stripid table-border table-hover">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>transition-property</td>
+                                <td>트랜지션을 적용할 CSS 속성 대상을 설정합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>transition-duration</td>
+                                <td>트랜지션의 작동시간을 설정합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>transition-timing-fuction</td>
+                                <td>트랜지션 움직임 효과를 설정합니다.</td>
+                            </tr>
+                            <tr>
+                                <td>transition-delay</td>
+                                <td>트랜지션이 시작되기 전에 대기시간을 설정합니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <style>
+                        .box > div {width: 60px; height: 60px; line-height: 60px; text-align: center; border-radius: 50%; color: #fff; position: relative; font-size: 12px; overflow: hidden;
+                            background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 100%); margin-bottom: 10px;  }
+                        .btn {
+                            color: #fff;
+                            background-image: linear-gradient(to top, #ff9a9e 0%,  #fecfef 100%);
+                        } 
+                        .box1 > div.timing1 {
+                            /*animation: move1 2s 10 linear; */
+                            animation-name: move1;
+                            animation-duration: 2s;
+                            animation-iteration-count: 10;
+                            animation-timing-function: linear;
+                        }
+                        .box1 > div.timing2 {
+                            /*animation: move1 2s 10 ease; */
+                            animation-name: move1;
+                            animation-duration: 2s;
+                            animation-iteration-count: 10;
+                            animation-timing-function: ease;
+                        }
+                        .box1 > div.timing3 {
+                            /*animation: move1 2s 10 ease-in; */
+                            animation-name: move1;
+                            animation-duration: 2s;
+                            animation-iteration-count: 10;
+                            animation-timing-function: ease-in;
+                        }
+                        .box1 > div.timing4 {
+                            /*animation: move1 2s 10 ease-out; */
+                            animation-name: move1;
+                            animation-duration: 2s;
+                            animation-iteration-count: 10;
+                            animation-timing-function: ease-out;
+                        }
+                        .box1 > div.timing5 {
+                            /*animation: move1 2s 10 ease-in-out; */
+                            animation-name: move1;
+                            animation-duration: 2s;
+                            animation-iteration-count: 10;
+                            animation-timing-function: ease-in-out;
+                        }
+                        @keyframes move1 {
+                            0% {left: 0%;}
+                            50% {left: calc(100% - 70px);}
+                            100% {left: 0%;}
+                        }
+                                                  
+                    </style>
+                    <h3>Animation-timing-fuction <a href="#c" class="btn btn1">Start</a></h3>
+                    <div class="well">
+                        <div class="box box1">
+                            <div>linear</div>
+                            <div>ease</div>
+                            <div>ease-in</div>
+                            <div>ease-out</div>
+                            <div>ease-in-out</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box1 > div.timing1 {animation: move1 2s 10 linear;}
+.box1 > div.timing2 {animation: move1 2s 10 ease;}
+.box1 > div.timing3 {animation: move1 2s 10 ease-in;}
+.box1 > div.timing4 {animation: move1 2s 10 ease-out;}
+.box1 > div.timing5 {animation: move1 2s 10 ease-in-out;}
+</code></pre>
+<br><br>
+
+                    <style>
+                        .box2 > div.timing6 {animation:move1 3s 10 step-start; }
+                        .box2 > div.timing7 {animation:move1 3s 10 step-end; }
+                        .box2 > div.timing8 {animation:move1 3s 10 steps(4, start); }
+                        .box2 > div.timing9 {animation:move1 3s 10 steps(4, end); }
+                        .box2 > div.timing10 {animation:move1 3s 10 steps(10, start); }
+                        .box2 > div.timing11 {animation:move1 3s 10 steps(10, end); }
+                    </style>
+
+                    <h3>Animation-timing-function : step <a href="#c" class="btn btn2">Start</a></h3>
+                    <div class="well">
+                        <div class="box box2">
+                            <div>step-start</div>
+                            <div>step-end</div>
+                            <div>steps(4, start)</div>
+                            <div>steps(4, end)</div>
+                            <div>steps(10, start)</div>
+                            <div>steps(10, end)</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box2 > div.timing6 {animation:move1 3s 10 step-start; }
+.box2 > div.timing7 {animation:move1 3s 10 step-end; }
+.box2 > div.timing8 {animation:move1 3s 10 steps(4, start); }
+.box2 > div.timing9 {animation:move1 3s 10 steps(4, end); }
+.box2 > div.timing10 {animation:move1 3s 10 steps(10, start); }
+.box2 > div.timing11 {animation:move1 3s 10 steps(10, end); }
+</code></pre>
+<br><br>
+                    <style>
+                        .box3 > div.timing12 {animation: move1 3s 10 cubic-bezier(0.42, 0, 0.13, 1.05);}
+                        .box3 > div.timing13 {animation: move1 3s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+                        .box3 > div.timing14 {animation: move1 3s 10 cubic-bezier(0.74, 0.54, 0, 0.65);}
+                        .box3 > div.timing15 {animation: move1 3s 10 cubic-bezier(1, 0.12, 0, 1.65);}
+                        .box3 > div.timing16 {animation: move1 3s 10 cubic-bezier(0, 1.5, 0, 1.16);}
+                    </style>
+                    <h3>Animation-timing-function : cubic-bezier <a href="#c" class="btn btn3">Start</a></h3>
+                    <div class="well">
+                        <div class="box box3">
+                            <div>cubic1</div>
+                            <div>cubic2</div>
+                            <div>cubic3</div>
+                            <div>cubic4</div>
+                            <div>cubic5</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box3 > div.timing12 {animation: move1 3s 10 cubic-bezier(0.42, 0, 0.13, 1.05);}
+.box3 > div.timing13 {animation: move1 3s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+.box3 > div.timing14 {animation: move1 3s 10 cubic-bezier(0.74, 0.54, 0, 0.65);}
+.box3 > div.timing15 {animation: move1 3s 10 cubic-bezier(1, 0.12, 0, 1.65);}
+.box3 > div.timing16 {animation: move1 3s 10 cubic-bezier(0, 1.5, 0, 1.16);}
+</code></pre>
+<br><br>
+                    <style>
+                        .box4 > div.timing17 {animation: move1 3s 0.1s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+                        .box4 > div.timing18 {animation: move1 3s 0.2s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+                        .box4 > div.timing19 {animation: move1 3s 0.3s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+                        .box4 > div.timing20 {animation: move1 3s 0.4s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+                        .box4 > div.timing21 {animation: move1 3s 0.5s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+                    </style>
+
+                    <h3>Animation-timing-function : delay <a href="#c" class="btn btn4">Start</a></h3>
+                    <div class="well">
+                        <div class="box box4">
+                            <div>delay1</div>
+                            <div>delay2</div>
+                            <div>delay3</div>
+                            <div>delay4</div>
+                            <div>delay5</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box4 > div.timing17 {animation: move1 3s 0.1s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+.box4 > div.timing18 {animation: move1 3s 0.2s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+.box4 > div.timing19 {animation: move1 3s 0.3s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+.box4 > div.timing20 {animation: move1 3s 0.4s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+.box4 > div.timing21 {animation: move1 3s 0.5s 10 cubic-bezier(0.79, 0.01, 1, 1);}
+</code></pre>
+<br><br>
+
+                    <style>
+                        .box5 { height: 500px;}
+                        .box5 > div.normal {animation: move2 3s 10 ease normal;}
+                        .box5 > div.reverse {animation: move2 3s 10 ease reverse;}
+                        .box5 > div.alterate {animation: move2 3s 10 ease alterate;}
+                        .box5 > div.alternate-reverse {animation: move2 3s 10 ease alternate-reverse;}
+
+                        @keyframes move2 {
+                            0% {left: 0; top: 0;}
+                            25% {left: calc(100% - 70px); top: 0;}
+                            50% {left: calc(100% - 70px); top: calc(100% - 70px);}
+                            75% {left: 0; top: calc(100% - 70px);}
+                            100% {left: 0; top: 0;}
+                        }
+                    </style>
+
+                    <h3 class="btn5">Animation-direction
+                        <a href="#c" class="btn btn5-1">normal</a>
+                        <a href="#c" class="btn btn5-2">reverse</a>
+                        <a href="#c" class="btn btn5-3">alterate</a>
+                        <a href="#c" class="btn btn5-4">alternate-reverse</a>
+                    </h3>
+                    <div class="well">
+                        <div class="box box5">
+                            <div>direction</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box5 > div.normal {animation: move2 3s 10 ease normal;}
+.box5 > div.reverse {animation: move2 3s 10 ease reverse;}
+.box5 > div.alterate {animation: move2 3s 10 ease alterate;}
+.box5 > div.alternate-reverse {animation: move2 3s 10 ease alternate-reverse;}
+@keyframes move2 {
+0% {left: 0; top: 0;}
+25% {left: calc(100% - 70px); top: 0;}
+50% {left: calc(100% - 70px); top: calc(100% - 70px);}
+75% {left: 0; top: calc(100% - 70px);}
+100% {left: 0; top: 0;}
+</code></pre>
+<br><br>
+                    <style>
+                        .box6 > div.timing22 {animation: move3 3s 1 ease none;}
+                        .box6 > div.timing23 {animation: move3 3s 1 ease forwards;} /* 실무에서 사용 */
+                        .box6 > div.timing24 {animation: move3 3s 1 ease backwards;} /* 실무에서 사용 */
+                        .box6 > div.timing25 {animation: move3 3s 1 ease both;}
+
+                        @keyframes move3 {
+                            0% {left: 0%;}
+                            100% {left: calc(100% - 70px);}
+                        }
+                    </style>
+                    <h3>animation-fill-mode <a href="#c" class="btn btn6">Start1</a></h3>
+                    <div class="well">
+                        <div class="box box6">
+                            <div>none</div>
+                            <div>forwards</div>
+                            <div>backwards</div>
+                            <div>both</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box6 > div.timing22 {animation: move3 3s 1 ease none;}
+.box6 > div.timing23 {animation: move3 3s 1 ease forwards;} 
+.box6 > div.timing24 {animation: move3 3s 1 ease backwards;}
+.box6 > div.timing25 {animation: move3 3s 1 ease both;}
+</code></pre>
+<br><br>
+                    <style>
+                        .box7 > div.timing26 {animation: move1 1s ease 1;}
+                        .box7 > div.timing27 {animation: move1 1s ease 2;}
+                        .box7 > div.timing28 {animation: move1 1s ease 3;}
+                        .box7 > div.timing29 {animation: move1 1s ease infinite;}
+                    </style>
+                    <h3>animation-iteration-count <a href="#c" class="btn btn7">Start</a></h3>
+                    <div class="well">
+                        <div class="box box7">
+                            <div>count1</div>
+                            <div>count2</div>
+                            <div>count3</div>
+                            <div>infinite</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box7 > div.timing26 {animation: move1 1s ease 1;}
+.box7 > div.timing27 {animation: move1 1s ease 2;}
+.box7 > div.timing28 {animation: move1 1s ease 3;}
+.box7 > div.timing29 {animation: move1 1s ease infinite;}
+</code></pre>
+<br><br>
+                    <style>
+                        .box8 { height: 300px;}
+                        .box8 > div.running {animation: move2 3s 10 ease running;}
+                        .box8 > div.paused {animation: move2 3s 10 ease paused;}
+                    </style>
+                    <h3 class="btn8">animation-play-state
+                        <a href="#c" class="btn">running</a>
+                        <a href="#c" class="btn">paused</a>
+                    </h3>
+                    <div class="well">
+                        <div class="box box8">
+                            <div>state</div>
+                        </div>
+                    </div>
+<pre><code class="language-css line-numbers">.box8 { height: 300px;}
+.box8 > div.running {animation: move2 3s 10 ease running;}
+.box8 > div.paused {animation: move2 3s 10 ease paused;}
+</code></pre>
+<br><br>
+
+                    <style>
+                        
+                        .box9 > div {width: 140px; height: 140px; line-height: 140px; text-align: center;float: left; margin:40px;}
+                        .box9 > div.bounce {animation: bounce 1s 10 ease;
+                            background: url("data:image/jpeg;base64,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");
+                            background-size: cover;}
+                        .box9 > div.bubberBand {animation: bubberBand 1s 10 ease;
+                            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtGsDbUyur_UJ72PO0lcOPSUSavDiQ8-8rjhahCUzySsieRi3o"); 
+                            background-size: cover; }
+                        .box9 > div.tada {animation: tada 1s 10 ease;
+                            background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugVKh-CyaCZgdoC_RbR3Hsw14_RL_1TVDXWpfgd41vxPmoMjjXQ");
+                            background-size: cover; }
+                        .box9 > div.shake {animation: shake 1s 10 ease;
+                            background: url("https://www.gong-cha.co.kr/uploads/product/20180206/PmY4T6ufBC2IHWvl_20180206.png");
+                            background-size: cover; }
+                        .box9 > div.swing {animation: swing 1s 10 ease;
+                            background: url("http://www.urbanbrush.net/web/wp-content/uploads/edd/2018/03/web-20180314082719217829.png");
+                            background-size: cover;}
+                        .box9 > div.wobble {animation: wobble 1s 10 ease;
+                            background: url("http://www.m-ms.co.kr/images/btn_ch_red.png");
+                            background-size: cover;}
+                        .box9 > div.lightSpeedIn {animation: lightSpeedIn 1s 10 ease;
+                            background: url("data:image/jpeg;base64,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");
+                            background-size: cover;}
+                        .box9 > div.jello {animation: jello 1s 10 ease;
+                            background: url("http://www.urbanbrush.net/web/wp-content/uploads/edd/2019/04/urbanbrush-20190408073012983262.png");
+                            background-size: cover; }
+                        .box9 > div.js {
+                            transform: rotateX(800deg);
+                            animation: js 1s 10 ease-in;
+                            background: url("http://leelulee1.dothome.co.kr/assets/ico/icon.jpg");
+                            background-size: cover;}
+
+                        @keyframes bounce {
+                            0%, 20%, 53%, 80%, 100% {
+                                transform: translate3d(0,0,0) ;
+                                animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+                            }
+                            40%, 43% {
+                                transform: translate3d(0, -30px, 0);
+                                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                            }
+                            70% {
+                                transform: translate3d(0, -15px, 0);
+                                animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+                            }
+                            90% {
+                                transform: translate3d(0, -4px, 0);
+                            }  
+                        }
+                        @keyframes bubberBand {
+                            0% {transform: scale3d(1,1,1);}
+                            30% {transform: scale3d(1.25,0.75,1);}
+                            40% {transform: scale3d(0.75,1.25,1);}
+                            50% {transform: scale3d(1.15,0.85,1);}
+                            65% {transform: scale3d(0.95,1.05,1);}
+                            75% {transform: scale3d(1.05,0.95,1);}
+                            100% {transform: scale3d(1,1,1);}
+                        }
+                        @keyframes tada {
+                            0% {transform: scale3d(1, 1, 1);}
+                            10%,20% {transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);}
+                            30%,50%,70%,90% {transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);}
+                            40%,60%,80% {transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);}
+                            100% {transform: scale3d(1, 1, 1);}
+                            }
+                        @keyframes shake {
+                            0%,100% {transform: translate3d(0, 0, 0);}
+                            10%,30%,50%,70%,90% {transform: translate3d(-10px, 0, 0);}
+                            20%,40%,60%,80% {transform: translate3d(10px, 0, 0);}
+                        }
+                        @keyframes swing {
+                            20% {transform: rotate3d(0, 0, 1, 15deg);}
+                            40% {transform: rotate3d(0, 0, 1, -10deg);}
+                            60% {transform: rotate3d(0, 0, 1, 5deg);}
+                            80% {transform: rotate3d(0, 0, 1, -5deg);}
+                            100% {transform: rotate3d(0, 0, 1, 0deg);}  
+                        }
+                        @keyframes wobble {
+                            0% {transform: translate3d(0, 0, 0);}
+                            15% {transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);}
+                            30% {transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);}
+                            45% {transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);}
+                            60% {transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);}
+                            75% {transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);}
+                            100% {transform: translate3d(0, 0, 0);}
+                        }
+                        @keyframes lightSpeedIn {
+                            0% {ransform: translate3d(100%, 0, 0) skewX(-30deg); opacity: 0;}
+                            60% {transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);}
+                            80% {transform: skewX(-5deg);}
+                            100% {transform: translate3d(0, 0, 0);}
+                        }
+                        @keyframes jello {
+                            0%,11.1%,100% {transform: translate3d(0, 0, 0);}
+                            22.2% {transform: skewX(-12.5deg) skewY(-12.5deg);}
+                            33.3% {transform: skewX(6.25deg) skewY(6.25deg);}
+                            44.4% {transform: skewX(-3.125deg) skewY(-3.125deg);}
+                            55.5% {transform: skewX(1.5625deg) skewY(1.5625deg);}
+                            66.6% {transform: skewX(-0.78125deg) skewY(-0.78125deg);}
+                            77.7% {transform: skewX(0.390625deg) skewY(0.390625deg);}
+                            88.8% {transform: skewX(-0.1953125deg) skewY(-0.1953125deg);}
+                        }
+                        @keyframes js {
+                            0% {
+                            transform: perspective(400px) rotate3d(1, 0, 0, 90deg) rotateX(0deg) translate3d(0, 0, 0);
+                            animation-timing-function: ease-in;
+                            opacity: 0;
+                            }
+                            11.1% {transform: translate3d(0, 0, 0);}
+                            22.2% {transform: skewX(-12.5deg) skewY(-12.5deg);}
+                            33.3% {transform: skewX(6.25deg) skewY(6.25deg);}
+                            44.4% {
+                                transform: perspective(400px) rotate3d(1, 0, 0, -20deg) rotateX(200deg);
+                                animation-timing-function: ease-in;
+                            }
+                            66.6% {
+                            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+                            opacity: 1;}
+                            77.7% {transform: skewX(0.390625deg) skewY(0.390625deg);}
+                            80% {transform: perspective(400px) rotate3d(1, 0, 0, -5deg) rotateX(200deg) skewX(-0.1953125deg) skewY(-0.1953125deg);}
+                            88.8% {transform: skewX(-0.1953125deg) skewY(-0.1953125deg);}
+                            100% {transform: perspective(0px) rotateX(0deg) translate3d(0, 0, 0) skewX(0deg) skewY(0deg);}
+                        }
+
+                    </style>
+
+
+                    <h4 class="btn9">Animate.css
+                        <a href="#c" class="btn">bounce</a>
+                        <a href="#c" class="btn">bubberBand</a>
+                        <a href="#c" class="btn">tada</a>
+                        <a href="#c" class="btn">shake</a>
+                        <a href="#c" class="btn">swing</a>
+                        <a href="#c" class="btn">wobble</a>
+                        <a href="#c" class="btn">lightSpeedIn</a>
+                        <a href="#c" class="btn">jello</a>
+                        <a href="#c" class="btn">js</a>
+                    </h4>
+                    <div class="well">
+                        <div class="box box9 clearfix">
+                            <div>animate</div>
+                            <div>animate</div>
+                            <div>animate</div>
+                            <div>animate</div>
+                            <div>animate</div>
+                        </div>
+                    </div>
+
+
+                    <h3>ANIMATION</h3>
+                    <p class="codepen" data-height="500" data-theme-id="37235" data-default-tab="result" data-user="laudpmvf" data-slug-hash="XLExqq" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="animation Steps">
+                    <span>See the Pen <a href="https://codepen.io/laudpmvf/pen/XLExqq/">
+                    animation Steps</a> by 박재성 (<a href="https://codepen.io/laudpmvf">@laudpmvf</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                    </p>
+                    <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+
+
+
+            </div>
+            <!--//span12-->
+        </div>
+        <!--//row-fluid-->
+    </div>
+    <!-- //contents -->
+
+    <!-- //footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h5>지성재성</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- script -->
+    <script src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script src="../assets/js/prism.js"></script>
+    <script>
+        //.btn {backgrouond:#ccc;}
+        $(".btn").css("background","#ccc");
+        $(".btn1").click(function(){
+            //alert("버튼을 클릭했습니다.");
+            $(".box1 > div").eq(0).addClass("timing1");
+            $(".box1 > div").eq(1).addClass("timing2");
+            $(".box1 > div").eq(2).addClass("timing3");
+            $(".box1 > div").eq(3).addClass("timing4");
+            $(".box1 > div").eq(4).addClass("timing5");
+        });
+        $(".btn2").click(function(){
+            //alert("버튼을 클릭했습니다.");
+            $(".box2 > div").eq(0).addClass("timing6");
+            $(".box2 > div").eq(1).addClass("timing7");
+            $(".box2 > div").eq(2).addClass("timing8");
+            $(".box2 > div").eq(3).addClass("timing9");
+            $(".box2 > div").eq(4).addClass("timing10");
+            $(".box2 > div").eq(5).addClass("timing11");
+        });
+        $(".btn3").click(function(){
+            //alert("버튼을 클릭했습니다.");
+            $(".box3 > div").eq(0).addClass("timing12");
+            $(".box3 > div").eq(1).addClass("timing13");
+            $(".box3 > div").eq(2).addClass("timing14");
+            $(".box3 > div").eq(3).addClass("timing15");
+            $(".box3 > div").eq(4).addClass("timing16");
+        });
+        $(".btn4").click(function(){
+            //alert("버튼을 클릭했습니다.");
+            $(".box4 > div").eq(0).addClass("timing17");
+            $(".box4 > div").eq(1).addClass("timing18");
+            $(".box4 > div").eq(2).addClass("timing19");
+            $(".box4 > div").eq(3).addClass("timing20");
+            $(".box4 > div").eq(4).addClass("timing21");
+        });
+        $(".btn5 a").click(function(){    //btn5를 클릭하면 동작해라
+            var text = $(this).text();    //클릭한 버튼의 글씨를 변수 text에 저장해라
+            //alert(text);
+            $(".box5 > div").removeClass().addClass(text);
+        });
+        $(".btn6").click(function(){
+            $(".box6 > div").eq(0).addClass("timing22");
+            $(".box6 > div").eq(1).addClass("timing23");
+            $(".box6 > div").eq(2).addClass("timing24");
+            $(".box6 > div").eq(3).addClass("timing25");
+        });
+        $(".btn7").click(function(){
+            $(".box7 > div").eq(0).addClass("timing26");
+            $(".box7 > div").eq(1).addClass("timing27");
+            $(".box7 > div").eq(2).addClass("timing28");
+            $(".box7 > div").eq(3).addClass("timing29");
+        });
+        $(".btn8 a").click(function(){    //btn8를 클릭하면 동작해라
+            var text = $(this).text();    //클릭한 버튼의 글씨를 변수 text에 저장해라
+            //alert(text);
+            $(".box8 > div").removeClass().addClass(text);
+        });
+        $(".btn9 a").click(function(){    //btn8를 클릭하면 동작해라
+            var text = $(this).text();    //클릭한 버튼의 글씨를 변수 text에 저장해라
+            //alert(text);
+            $(".box9 > div").removeClass().addClass(text);
+        });
+    </script>
+</body>
+
+</html>

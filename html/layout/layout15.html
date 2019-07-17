@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>layout15</title>
+	<style>
+		* {margin: 0; padding: 0;}
+		body {background-color: #f8f8f8;}
+		#wrap {width: 1200px; margin:0 auto;}
+		#header {width: 100%; height: 100px; background-color: #999;}
+		#banner {width: 100%; height: 200px; background-color: #888;}
+		#content01 {overflow: hidden;}
+		#content01 .aside_left {width: 33.333%; height: 300px; background-color: #777; float: left;}
+		#content01 .article_right01 {width: 66.667%; height: 150px; background-color: #666; float: left;}
+		#content01 .article_right02 {width: 66.667%; height: 150px; background-color: #555; float: left;}
+		#content02 {overflow: hidden;}
+		#content02 .box01 {width: 33.333%; height: 200px; background-color: #444; float: left;}
+		#content02 .box02 {width: 33.333%; height: 200px; background-color: #333; float: left;}
+		#content02 .box03 {width: 33.333%; height: 200px; background-color: #222; float: left;}
+		#content03 {background-color: #999; overflow: hidden; padding: 5%;}
+        #content03 > nav {width: 23%; height: 150px; margin: 1%; float: left; background-color: #111; border-radius:20px;}
+		#footer {width: 100%; height: 100px; background-color: #333;}
+
+		@media (max-width: 1200px){
+            #wrap {width: 100%;}
+            #content02 .box01 {width: 50%;}
+            #content02 .box02 {display: none;}
+            #content03 > nav {width: 31.333%;}
+            #content03 .square {display:none;}
+		}
+
+		@media (max-width: 768px){
+            #content02 .box01 {width: 100%;}
+            #content02 .box02 {display: none;}
+		}
+
+		@media (max-width: 480px){
+			#content01 .aside_left {width: 100%; height: 150px;}
+			#content01 .article_right01 {width: 100%;}
+			#content01 .article_right02 {width: 100%;}
+            #content02 .box01 {width: 100%;}
+            #content02 .box02 {display: none;}
+            #content03 > nav {width: 98%;}
+            #content03 .square {display: none;}
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header"></header>
+		<section id="banner"></section>
+		<section id="content01">
+			<aside class="aside_left"></aside>
+			<aside class="article_right01"></aside>
+			<aside class="article_right02"></aside>
+		</section>
+		<section id="content02">
+			<article class="box01"></article>
+			<article class="box01"></article>
+			<article class="box02"></article>
+		</section>
+		<section id="content03">
+			<nav></nav>
+			<nav></nav>
+			<nav></nav>
+			<nav></nav>
+			<nav></nav>
+			<nav></nav>
+			<nav class="square"></nav>
+			<nav class="square"></nav>
+		</section>
+		<footer id="footer"></footer>
+	</div>
+	
+</body>
+</html>

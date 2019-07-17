@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>TRANSFORM-지성재성</title>
+
+    <!-- web_font -->
+    <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' rel='stylesheet' type='text/css' />
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+       <link href="../assets/css/prism.css" rel="stylesheet">
+
+    <!-- Prettify -->
+    <link href="../assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/ico/icon_57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/ico/icon_114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/ico/icon_72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/ico/icon_144.png">
+
+    <!-- hmlt5 support -->
+    <!--[if lt IE 9]><script src="../assets/js/html5shiv.js"></script><![endif]-->
+
+    <!-- IE6,7 support -->
+    <!--[if lte IE 7]><link rel="stylesheet" href="comm/css/ie7.css" type="text/css" ><![endif]-->
+    <!--[if IE 8]><link rel="stylesheet" href="comm/css/ie8.css" type="text/css" ><![endif]-->
+
+    <!--[if lte IE 6]>
+        <p style="font-size: 12px; color: #fff; background: #2885b0; padding:5px 0; margin: 0; text-align: center">
+            사용하고 계신 브라우저는 최신 웹 브라우저가 아닙니다. 업그레이드를 하거나 다른 최신 브라우저 사용을 권장합니다.
+            <a href="http://www.microsoft.com/korea/ie" target="_blank" >업그레이드,</a>
+            <a href="http://www.mozilla.or.kr/ko/" target="_blank">파이어폭스,</a>
+            <a href="http://kr.opera.com/download/" target="_blank">오페라,</a>,
+            <a href="http://support.apple.com/kb/DL1531?viewlocale=ko_KR&locale=ko_KR" target="_blank">사파리,</a>
+            <a href="http://www.google.com/chrome?hl=ko" target="_blank">크롬</a></p>
+            <![endif]-->
+    <style>
+        .face {
+            display: block;
+            margin: 20px auto;
+            width: 400px;
+        }
+
+        .face img {
+            width: 400px;
+            border-radius: 50%;
+        }
+
+        .face1 img {
+            width: 22%;
+            border-radius: 10%;
+            margin: 1%;
+        }
+
+        .member {
+            margin: 50px 0;
+        }
+
+        .member li {
+            width: 150px;
+            list-style: none;
+            display: inline-block;
+            margin: 6px;
+        }
+
+        .member li img {
+            border-radius: 50%;
+        }
+
+        table em {
+            border: 1px solid #000;
+            font-style: normal;
+            font-size: 80%;
+            padding: 3px;
+            border-radius: 3px;
+            background: #fff;
+            color: #333;
+        }
+        h1 {
+            font-weight:400;
+        }
+        h2 { 
+            color: #3098CE; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <div id="top-nav" class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                    <ul class="nav pull-right">
+                        <li><a href="http://leelulee1.dothome.co.kr" target="_blank">지성재성</a></li>
+                        <li><a href="https://nbkoti.tistory.com/" target="_blank">tistory</a></li>
+                        <li><a href="https://codepen.io/laudpmvf/" target="_blank">codepen</a></li>
+                        <li><a href="https://dribbble.com/nbkoti" target="_blank">dribbble</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //nav -->
+
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="span12" style="text-align:center;">
+                        <div class="header_tit">
+                            <p><img src="../assets/img/cha.png" alt=""></p>
+                            <h1>Professional web publishers</h1>
+                            <!---h2><a href="http://leelulee1.dothome.co.kr">지성재성</a></h2-->
+                        </div>
+                        <!----div class="header_icon">
+                            <ul>
+                                <li class="icon_tit1"><a href="www.facebook.com" title="facebook" target="_blank"><img src="assets/img/icon_f.png" alt=""><span class="ir_so">페이스북</span></a></li>
+                                <li class="icon_tit2"><a href="www.twitter.com" title="twitter" target="_blank"><img src="assets/img/icon_t.png" alt=""><span class="ir_so">트위터</span></a></li>
+                                <li class="icon_tit3"><a href="www.instagram.com" title="instagram" target="_blank"><img src="assets/img/icon_i.png" alt=""><span class="ir_so">인스타그램</span></a></li>
+                                <li class="icon_tit4"><a href="www.vlive.tv" title="v_app" target="_blank"><img src="assets/img/icon_v.png" alt=""><span class="ir_so">브이앱</span></a></li>
+                            </ul>
+                        </div-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+
+    <!-- contents -->
+    <div class="container" style="margin-top:20px;">
+        <div class="row-fluid">
+            <div class="span12">
+
+                <h1>CSS_TRANSFORM</h1>
+
+                <h2>Transfrom</h2>
+                <p>변환은 엘리먼트의 좌표를 조작하여 위치나, 크기, 회전 각도 등을 변경하는 기법입니다. 변환함수는 이동(translate), 확대(scale), 회전(ratate), 기울이기(skew) 등의 4가지 함수와 행렬변환, 원근변환이 있습니다.</p>
+
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>이동(translate)</th>
+                            <th>확대(scale)</th>
+                            <th>회전(rotate)</th>
+                            <th>기울이기(skew)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2d변환</td>
+                            <td>translate(x,y)</td>
+                            <td>scale(x,y)</td>
+                            <td>rotate(angle)</td>
+                            <td>skew(x-angle,y-angle)</td>
+                        </tr>
+                        <tr>
+                            <td>3d변환</td>
+                            <td>translate3d(x,y,z)</td>
+                            <td>scale3d(x,y,z)</td>
+                            <td>rotate3d(ax,y,z,angle)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>x축 변환</td>
+                            <td>translateX(x)</td>
+                            <td>scaleX(x)</td>
+                            <td>rotateX(angle)</td>
+                            <td>skewX(angle)</td>
+                        </tr>
+                        <tr>
+                            <td>y축 변환</td>
+                            <td>translateY(y)</td>
+                            <td>scaleY(y)</td>
+                            <td>rotateY(angle)</td>
+                            <td>skewY(angle)</td>
+                        </tr>
+                        <tr>
+                            <td>z축 변환</td>
+                            <td>translateZ(z)</td>
+                            <td>scaleZ(z)</td>
+                            <td>rotateZ(angle)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>translate</h3>
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>Porperty</th>
+							<th>Sample</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>translate</td>
+							<td>transform: translate(10px, 20px);</td>
+							<td>선택한 요소의  X좌표, Y좌표 이동을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>translate3d</td>
+							<td>transform: translate3d(10px, 20px, 30px);</td>
+							<td>선택한 요소의  X좌표, Y좌표, Z좌표 이동을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>translateX</td>
+							<td>transform: translateX(10px)</td>
+							<td>선택한 요소의  X좌표 이동을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>translateY</td>
+							<td>transform: translateY(10px)</td>
+							<td>선택한 요소의  Y좌표 이동을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>translateZ</td>
+							<td>transform: translateZ(10px)</td>
+							<td>선택한 요소의  Z좌표 이동을 나타냅니다.</td>
+						</tr>
+                    </tbody>
+
+                </table>
+                
+                    <style>
+                        .block {width: 140px; height: 140px; line-height: 140px; font-size: 18px; text-align: center; cursor: pointer; float: left; color: #fff; margin: 40px; perspective: 500px;
+                        border: 1px solid #ccc;}
+                        .block.tra1 > div {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+                        transition: all 0.3s ease;}
+                        .block.tra1 > div:hover {transform: none;}
+                        .translate01 {transform: translate(10px, 10px);}
+                        .translate02 {transform: translate(20px, 20px);}
+                        .translate03 {transform: translate(30px, 30px);}
+                        .translate04 {transform: translate(40px, 40px);}
+                        .translate05 {transform: translate(50px, 50px);}
+                    </style>
+                    
+                    <div class="well clearfix">
+                            <div class="block tra1">
+                                <div class="translate01">translate01</div>
+                            </div>
+                            <div class="block tra1">
+                                <div class="translate02">translate02</div>
+                            </div>
+                            <div class="block tra1">
+                                <div class="translate03">translate03</div>
+                            </div>
+                            <div class="block tra1">
+                                <div class="translate04">translate04</div>
+                            </div>
+                            <div class="block tra1">
+                                <div class="translate05">translate05</div>
+                            </div>
+                    </div>
+<pre><code class="language-css line-numbers">.translate01 {transform: translate(10px, 10px);}
+.translate02 {transform: translate(20px, 20px);}
+.translate03 {transform: translate(30px, 30px);}
+.translate04 {transform: translate(40px, 40px);}
+.translate05 {transform: translate(50px, 50px);}
+</code></pre>
+                        <style>
+                            .block {width: 140px; height: 140px; line-height: 140px; font-size: 18px; text-align: center; cursor: pointer; float: left; color: #fff; margin: 40px; perspective: 500px;
+                            border: 1px solid #ccc;}
+                            .block.tra1 > div {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+                            transition: all 0.3s ease;}
+                            .block.tra1 > div:hover {transform: none;}
+                            .translate06 {transform: translateX(10px);}
+                            .translate07 {transform: translateX(20px);}
+                            .translate08 {transform: translateX(30px);}
+                            .translate09 {transform: translateX(40px);}
+                            .translate10 {transform: translateX(50px);}
+                        </style>
+                        
+                        <div class="well clearfix">
+                                <div class="block tra1">
+                                    <div class="translate06">translate06</div>
+                                </div>
+                                <div class="block tra1">
+                                    <div class="translate07">translate07</div>
+                                </div>
+                                <div class="block tra1">
+                                    <div class="translate08">translate08</div>
+                                </div>
+                                <div class="block tra1">
+                                    <div class="translate09">translate09</div>
+                                </div>
+                                <div class="block tra1">
+                                    <div class="translate10">translate10</div>
+                                </div>
+                        </div>
+<pre><code class="language-css line-numbers">.translate06 {transform: translateX(10px);}
+.translate07 {transform: translateX(20px);}
+.translate08 {transform: translateX(30px);}
+.translate09 {transform: translateX(40px);}
+.translate10 {transform: translateX(50px);}
+</code></pre>
+
+                            <style>
+                                .block {width: 140px; height: 140px; line-height: 140px; font-size: 18px; text-align: center; cursor: pointer; float: left; color: #fff; margin: 40px; perspective: 500px;
+                                border: 1px solid #ccc;}
+                                .block.tra1 > div {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+                                transition: all 0.3s ease;}
+                                .block.tra1 > div:hover {transform: none;}
+                                .translate11 {transform: translateY(10px);}
+                                .translate12 {transform: translateY(20px);}
+                                .translate13 {transform: translateY(30px);}
+                                .translate14 {transform: translateY(40px);}
+                                .translate15 {transform: translateY(50px);}
+                            </style>
+                            
+                            <div class="well clearfix">
+                                    <div class="block tra1">
+                                        <div class="translate11">translate11</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate12">translate12</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate13">translate13</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate14">translate14</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate15">translate15</div>
+                                    </div>
+                            </div>
+<pre><code class="language-css line-numbers">.translate11 {transform: translateY(10px);}
+.translate12 {transform: translateY(20px);}
+.translate13 {transform: translateY(30px);}
+.translate14 {transform: translateY(40px);}
+.translate15 {transform: translateY(50px);}
+</code></pre>
+
+                            <style>
+                                    .block {width: 140px; height: 140px; line-height: 140px; font-size: 18px; text-align: center; cursor: pointer; float: left; color: #fff; margin: 40px; perspective: 500px;
+                                    border: 1px solid #ccc;}
+                                    .block.tra1 > div {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+                                    transition: all 0.3s ease;}
+                                    .block.tra1 > div:hover {transform: none;}
+                                    .translate16 {transform: translateZ(10px); opacity: 0.6;}
+                                    .translate17 {transform: translateZ(30px); opacity: 0.6;}
+                                    .translate18 {transform: translateZ(50px); opacity: 0.6;}
+                                    .translate19 {transform: translateZ(70px); opacity: 0.6;}
+                                    .translate20 {transform: translateZ(90px); opacity: 0.6;}
+                            </style>
+                            
+                            <div class="well clearfix">
+                                    <div class="block tra1">
+                                        <div class="translate16">translate16</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate17">translate17</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate18">translate18</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate19">translate19</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate20">translate20</div>
+                                    </div>
+                            </div>
+<pre><code class="language-css line-numbers">.translate16 {transform: translateZ(10px); opacity: 0.6;}
+.translate17 {transform: translateZ(30px); opacity: 0.6;}
+.translate18 {transform: translateZ(50px); opacity: 0.6;}
+.translate19 {transform: translateZ(70px); opacity: 0.6;}
+.translate20 {transform: translateZ(90px); opacity: 0.6;}
+</code></pre>
+
+                            <style>
+                                    .block {width: 140px; height: 140px; line-height: 140px; font-size: 18px; text-align: center; cursor: pointer; float: left; color: #fff; margin: 40px; perspective: 500px;
+                                    border: 1px solid #ccc;}
+                                    .block.tra1 > div {background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+                                    transition: all 0.3s ease;}
+                                    .block.tra1 > div:hover {transform: none;}
+                                    .translate21 {transform: translateZ(-10px); opacity: 0.6;}
+                                    .translate22 {transform: translateZ(-30px); opacity: 0.6;}
+                                    .translate23 {transform: translateZ(-50px); opacity: 0.6;}
+                                    .translate24 {transform: translateZ(-70px); opacity: 0.6;}
+                                    .translate25 {transform: translateZ(-90px); opacity: 0.6;}
+                            </style>
+
+                            <div class="well clearfix">
+                                    <div class="block tra1">
+                                        <div class="translate21">translate21</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate22">translate22</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate23">translate23</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate24">translate24</div>
+                                    </div>
+                                    <div class="block tra1">
+                                        <div class="translate25">translate25</div>
+                                    </div>
+                            </div>
+<pre><code class="language-css line-numbers">.translate21 {transform: translateZ(-10px); opacity: 0.6;}
+.translate22 {transform: translateZ(-30px); opacity: 0.6;}
+.translate23 {transform: translateZ(-50px); opacity: 0.6;}
+.translate24 {transform: translateZ(-70px); opacity: 0.6;}
+.translate25 {transform: translateZ(-90px); opacity: 0.6;}
+</code></pre>
+
+<br><br>
+<h3>scale</h3>
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>Porperty</th>
+							<th>Sample</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>scale</td>
+							<td>transform: scale(2, 2);</td>
+							<td>선택한 요소의  X축, Y축 확대를 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>scale3d</td>
+							<td>transform: scale3d(2, 2, 2);</td>
+							<td>선택한 요소의  X축, Y축, Z축 확대를 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>scaleX</td>
+							<td>transform: scaleX(2);</td>
+							<td>선택한 요소의  X축 확대를 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>scaleY</td>
+							<td>transform: scaleY(2);</td>
+							<td>선택한 요소의  Y축 확대를 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>scaleZ</td>
+							<td>transform: scaleZ(2);</td>
+							<td>선택한 요소의  Z축 확대를 나타냅니다.</td>
+						</tr>
+					</tbody>
+                </table>
+
+                <style>
+                    .block.scal > div {background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
+                                    transition: all 0.3s ease; opacity: 0.6;}     
+                    .block.scal > div:hover {transform: none;}      
+                    .scale01 {transform: scale(1.1, 1.1);}
+                    .scale02 {transform: scale(1.2, 1.2);}
+                    .scale03 {transform: scale(1.3, 1.3);}
+                    .scale04 {transform: scale(1.4, 1.4);}
+                    .scale05 {transform: scale(1.5, 1.5);}
+                </style>
+                
+                <div class="well clearfix">
+                        <div class="block scal">
+                            <div class="scale01">scale01</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale02">scale02</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale03">scale03</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale04">scale04</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale05">scale05</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.scale01 {transform: scale(1.1, 1.1);}
+.scale02 {transform: scale(1.2, 1.2);}
+.scale03 {transform: scale(1.3, 1.3);}
+.scale04 {transform: scale(1.4, 1.4);}
+.scale05 {transform: scale(1.5, 1.5);}
+</code></pre>
+
+                <style>
+                    .block.scal > div {background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%); transition: all 0.3s ease; opacity: 0.6;}     
+                    .block.scal > div:hover {transform: none;}      
+                    .scale06 {transform: scale(0.9, 0.9);}
+                    .scale07 {transform: scale(0.8, 0.8);}
+                    .scale08 {transform: scale(0.7, 0.7);}
+                    .scale09 {transform: scale(0.6, 0.6);}
+                    .scale10 {transform: scale(0.5, 0.5);}
+                </style>
+                
+                <div class="well clearfix">
+                        <div class="block scal">
+                            <div class="scale06">scale06</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale07">scale07</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale08">scale08</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale09">scale09</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale10">scale10</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.scale06 {transform: scale(0.9, 0.9);}
+.scale07 {transform: scale(0.8, 0.8);}
+.scale08 {transform: scale(0.7, 0.7);}
+.scale09 {transform: scale(0.6, 0.6);}
+.scale10 {transform: scale(0.5, 0.5);}
+</code></pre>
+
+                <style>
+                    .block.scal > div {background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%); transition: all 0.3s ease; opacity: 0.6;}     
+                    .block.scal > div:hover {transform: none;}      
+                    .scale11 {transform: scaleX(1.1);}
+                    .scale12 {transform: scaleX(1.2);}
+                    .scale13 {transform: scaleX(1.3);}
+                    .scale14 {transform: scaleX(1.4);}
+                    .scale15 {transform: scaleX(1.5);}
+                </style>
+                
+                <div class="well clearfix">
+                        <div class="block scal">
+                            <div class="scale11">scale11</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale12">scale12</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale13">scale13</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale14">scale14</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale15">scale15</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.scale11 {transform: scaleX(1.1);}
+.scale12 {transform: scaleX(1.2);}
+.scale13 {transform: scaleX(1.3);}
+.scale14 {transform: scaleX(1.4);}
+.scale15 {transform: scaleX(1.5);}
+</code></pre>
+
+                <style>
+                    .block.scal > div {background-image: linear-gradient(to top, #4facfe 0%, #00f2fe 100%); transition: all 0.3s ease; opacity: 0.6;}     
+                    .block.scal > div:hover {transform: none;}      
+                    .scale16 {transform: scaleY(1.1);}
+                    .scale17 {transform: scaleY(1.2);}
+                    .scale18 {transform: scaleY(1.3);}
+                    .scale19 {transform: scaleY(1.4);}
+                    .scale20 {transform: scaleY(1.5);}
+                </style>
+                
+                <div class="well clearfix">
+                        <div class="block scal">
+                            <div class="scale16">scale16</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale17">scale17</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale18">scale18</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale19">scale19</div>
+                        </div>
+                        <div class="block scal">
+                            <div class="scale20">scale20</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.scale16 {transform: scaleY(1.1);}
+.scale17 {transform: scaleY(1.2);}
+.scale18 {transform: scaleY(1.3);}
+.scale19 {transform: scaleY(1.4);}
+.scale20 {transform: scaleY(1.5);}
+</code></pre>
+<br><br>
+<h3>rotate</h3>
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>Porperty</th>
+							<th>Sample</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>rotate</td>
+							<td>transform: rotate(10deg);</td>
+							<td>선택한 요소의  회전을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>rotate3d</td>
+							<td>transform: rotate3d(0, 1, 0, 10deg);</td>
+							<td>선택한 요소의  3d회전을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>rotateX</td>
+							<td>transform: rotateX(10deg);</td>
+							<td>선택한 요소의  X축 회전을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>rotateY</td>
+							<td>transform: rotateY(10deg);</td>
+							<td>선택한 요소의  Y축 회전을 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>rotateZ</td>
+							<td>transform: rotateZ(10deg);</td>
+							<td>선택한 요소의  Z축 회전을 나타냅니다.</td>
+						</tr>
+					</tbody>
+                </table>
+                <style>
+                    .block.rot1 > div {background-image: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%); transition: all 0.3s ease; opacity: 0.6;}   
+                    .block.rot1 > div:hover {transform: none;}      
+                    .rotate01 {transform: rotate(10deg);}
+                    .rotate02 {transform: rotate(20deg);}
+                    .rotate03 {transform: rotate(30deg);}
+                    .rotate04 {transform: rotate(40deg);}
+                    .rotate05 {transform: rotate(50deg); animation : rotate05 1s infinite}
+
+                    @keyframes rotate05 {
+                        0% {transform: rotate(0deg);}
+                        50% {transform: rotate(50deg);}
+                        100% {transform: rotate(0deg);}
+                    }
+
+                </style>
+                
+                <div class="well clearfix">
+                        <div class="block rot1">
+                            <div class="rotate01">rotate01</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate02">rotate02</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate03">rotate03</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate04">rotate04</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate05">rotate05</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.rotate01 {transform: rotate(10deg);}
+.rotate02 {transform: rotate(20deg);}
+.rotate03 {transform: rotate(30deg);}
+.rotate04 {transform: rotate(40deg);}
+.rotate05 {transform: rotate(50deg); animation : rotate05 1s infinite}
+</code></pre>
+
+                <style>
+                        .block.rot1 > div {background-image: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%); transition: all 0.3s ease; opacity: 0.6;}   
+                        .block.rot1 > div:hover {transform: none;}      
+                        .rotate06 {transform: rotateX(10deg);}
+                        .rotate07 {transform: rotateX(20deg);}
+                        .rotate08 {transform: rotateX(30deg);}
+                        .rotate09 {transform: rotateX(40deg);}
+                        .rotate10 {transform: rotateX(50deg); animation : rotate10 1s infinite}
+
+                        @keyframes rotate10 {
+                        0% {transform: rotateX(0deg);}
+                        50% {transform: rotateX(50deg);}
+                        100% {transform: rotateX(0deg);}
+                        }
+
+                    </style>
+                <div class="well clearfix">
+                        <div class="block rot1">
+                            <div class="rotate06">rotate06</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate07">rotate07</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate08">rotate08</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate09">rotate09</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate10">rotate10</div>
+                        </div>
+                </div>
+
+<pre><code class="language-css line-numbers">.rotate06 {transform: rotateX(10deg);}
+.rotate07 {transform: rotateX(20deg);}
+.rotate08 {transform: rotateX(30deg);}
+.rotate09 {transform: rotateX(40deg);}
+.rotate10 {transform: rotateX(50deg); animation : rotate10 1s infinite}
+</code></pre>
+
+                <style>
+                        .block.rot1 > div {background-image: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%); transition: all 0.3s ease; opacity: 0.6;}   
+                        .block.rot1 > div:hover {transform: none;}      
+                        .rotate11 {transform: rotateY(10deg);}
+                        .rotate12 {transform: rotateY(20deg);}
+                        .rotate13 {transform: rotateY(30deg);}
+                        .rotate14 {transform: rotateY(40deg);}
+                        .rotate15 {transform: rotateY(50deg); animation : rotate15 1s infinite}
+
+                        @keyframes rotate15 {
+                        0% {transform: rotateY(0deg);}
+                        50% {transform: rotateY(50deg);}
+                        100% {transform: rotateY(0deg);}
+                        }
+
+                    </style>
+                <div class="well clearfix">
+                        <div class="block rot1">
+                            <div class="rotate11">rotate11</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate12">rotate12</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate13">rotate13</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate14">rotate14</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate15">rotate15</div>
+                        </div>
+                </div>
+
+<pre><code class="language-css line-numbers">.rotate11 {transform: rotateY(10deg);}
+.rotate12 {transform: rotateY(20deg);}
+.rotate13 {transform: rotateY(30deg);}
+.rotate14 {transform: rotateY(40deg);}
+.rotate15 {transform: rotateY(50deg); animation : rotate15 1s infinite}
+</code></pre>
+
+                <style>
+                        .block.rot1 > div {background-image: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%); transition: all 0.3s ease; opacity: 0.6;}   
+                        .block.rot1 > div:hover {transform: none;}      
+                        .rotate16 {transform: rotateZ(10deg);}
+                        .rotate17 {transform: rotateZ(20deg);}
+                        .rotate18 {transform: rotateZ(30deg);}
+                        .rotate19 {transform: rotateZ(40deg);}
+                        .rotate20 {transform: rotateZ(50deg); animation : rotate20 1s infinite}
+
+                        @keyframes rotate20 {
+                        0% {transform: rotateZ(0deg);}
+                        50% {transform: rotateZ(50deg);}
+                        100% {transform: rotateZ(0deg);}
+                        }
+
+                    </style>
+                <div class="well clearfix">
+                        <div class="block rot1">
+                            <div class="rotate16">rotate16</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate17">rotate17</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate18">rotate18</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate19">rotate19</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate20">rotate20</div>
+                        </div>
+                </div>
+
+<pre><code class="language-css line-numbers">.rotate16 {transform: rotateZ(10deg);}
+.rotate17 {transform: rotateZ(20deg);}
+.rotate18 {transform: rotateZ(30deg);}
+.rotate19 {transform: rotateZ(40deg);}
+.rotate20 {transform: rotateZ(50deg); animation : rotate20 1s infinite}
+</code></pre>
+
+                <style>
+                        .block.rot1 > div {background-image: linear-gradient(120deg, #43e97b 0%, #38f9d7 100%); transition: all 0.3s ease; opacity: 0.6;}   
+                        .block.rot1 > div:hover {transform: none;}      
+                        .rotate21 {transform: rotate3d(0,1,1,10deg);}
+                        .rotate22 {transform: rotate3d(0,1,1,30deg);}
+                        .rotate23 {transform: rotate3d(0,1,1,50deg);}
+                        .rotate24 {transform: rotate3d(0,1,1,70deg);}
+                        .rotate25 {transform: rotate3d(0,1,1,90deg); animation : rotate25 1s infinite}
+
+                        @keyframes rotate25 {
+                        0% {transform: rotate3d(0,1,1,10deg);}
+                        50% {transform: rotate3d(0,1,1,90deg);}
+                        100% {transform: rotate3d(0,1,1,10deg);}
+                        }
+
+                    </style>
+                <div class="well clearfix">
+                        <div class="block rot1">
+                            <div class="rotate21">rotate21</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate22">rotate22</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate23">rotate23</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate24">rotate24</div>
+                        </div>
+                        <div class="block rot1">
+                            <div class="rotate25">rotate25</div>
+                        </div>
+                </div>
+
+<pre><code class="language-css line-numbers">.rotate21 {transform: rotate3d(0,1,1,10deg);}
+.rotate22 {transform: rotate3d(0,1,1,30deg);}
+.rotate23 {transform: rotate3d(0,1,1,50deg);}
+.rotate24 {transform: rotate3d(0,1,1,70deg);}
+.rotate25 {transform: rotate3d(0,1,1,90deg); animation : rotate25 1s infinite}
+</code></pre>
+
+<h3>skew</h3>
+				<table class="table table-striped table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>Porperty</th>
+							<th>Sample</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>skew</td>
+							<td>transform: skew(10deg, 10deg);</td>
+							<td>선택한 요소의  X축, Y축 기울기를 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>skewX</td>
+							<td>transform: skewX(10deg);</td>
+							<td>선택한 요소의  X축 기울기를 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>skewY</td>
+							<td>transform: skewY(10deg);</td>
+							<td>선택한 요소의  Y축 기울기를 나타냅니다.</td>
+						</tr>
+						<tr>
+							<td>rotateZ</td>
+							<td>transform: rotateZ(10deg);</td>
+							<td>선택한 요소의  Z축 회전을 나타냅니다.</td>
+						</tr>
+					</tbody>
+                </table>
+                <style>
+                    .block.ske1 > div {background-image: linear-gradient(120deg, #9890e3 0%, #b1f4cf 100%); transition: all 0.3s ease;}
+                    .block.ske1 > div:hover {transform: none;}
+                    .skew01 {transform: skew(10deg, 10deg);}
+                    .skew02 {transform: skew(20deg, 20deg);}
+                    .skew03 {transform: skew(30deg, 30deg);}
+                    .skew04 {transform: skew(40deg, 40deg);}
+                    .skew05 {transform: skew(50deg, 50deg);}
+
+                    .skew06 {transform: skewX(10deg);}
+                    .skew07 {transform: skewX(20deg);}
+                    .skew08 {transform: skewX(30deg);}
+                    .skew09 {transform: skewX(40deg);}
+                    .skew10 {transform: skewX(50deg);}
+
+                    .skew11 {transform: skewY(10deg);}
+                    .skew12 {transform: skewY(20deg);}
+                    .skew13 {transform: skewY(30deg);}
+                    .skew14 {transform: skewY(40deg);}
+                    .skew15 {transform: skewY(50deg);}
+                </style>
+                
+                <div class="well clearfix">
+                        <div class="block ske1">
+                            <div class="skew01">skew01</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew02">skew02</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew03">skew03</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew04">skew04</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew05">skew05</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.skew01 {transform: skew(10deg, 10deg);}
+.skew02 {transform: skew(20deg, 20deg);}
+.skew03 {transform: skew(30deg, 30deg);}
+.skew04 {transform: skew(40deg, 40deg);}
+.skew05 {transform: skew(50deg, 50deg);}
+</code></pre>
+
+                <div class="well clearfix">
+                        <div class="block ske1">
+                            <div class="skew06">skew06</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew07">skew07</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew08">skew08</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew09">skew09</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew10">skew10</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.skew06 {transform: skewX(10deg);}
+.skew07 {transform: skewX(20deg);}
+.skew08 {transform: skewX(30deg);}
+.skew09 {transform: skewX(40deg);}
+.skew10 {transform: skewX(50deg);}
+</code></pre>
+
+                <div class="well clearfix">
+                        <div class="block ske1">
+                            <div class="skew11">skew11</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew12">skew12</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew13">skew13</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew14">skew14</div>
+                        </div>
+                        <div class="block ske1">
+                            <div class="skew15">skew15</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.skew11 {transform: skewY(10deg);}
+.skew12 {transform: skewY(20deg);}
+.skew13 {transform: skewY(30deg);}
+.skew14 {transform: skewY(40deg);}
+.skew15 {transform: skewY(50deg);}
+</code></pre>
+                <style>
+                    .tr1 > div {background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); transition: all 0.3s ease}
+                    .tr1 > div:hover {transform: none;}
+                    .transform01 {transform: scale(1.1) translate(10px) skewY(30deg) rotate3d(0,1,1,640deg);}
+                    .transform02 {transform: scale(0.5) translate(40px) skewY(180deg) rotate3d(1,0,1,180deg);}
+                    .transform03 {transform: scale(1.3) translate(30px) skewX(300deg) rotate3d(0,1,0,720deg);}
+                    .transform04 {transform: scale(0.8) translate(20px) skewY(720deg) rotate3d(1,1,1,300deg);}
+                    .transform05 {transform: scale(1.8) translate(20px) skewX(150deg) rotate3d(1,0,1,30deg);}
+                </style>
+
+                <div class="well clearfix">
+                        <div class="block tr1">
+                            <div class="transform01">transform01</div>
+                        </div>
+                        <div class="block tr1">
+                            <div class="transform02">transform02</div>
+                        </div>
+                        <div class="block tr1">
+                            <div class="transform03">transform03</div>
+                        </div>
+                        <div class="block tr1">
+                            <div class="transform04">transform04</div>
+                        </div>
+                        <div class="block tr1">
+                            <div class="transform05">transform05</div>
+                        </div>
+                </div>
+<pre><code class="language-css line-numbers">.transform01 {transform: scale(1.1) translate(10px) skewY(30deg) rotate3d(0,1,1,640deg);}
+.transform02 {transform: scale(0.5) translate(40px) skewY(180deg) rotate3d(1,0,1,180deg);}
+.transform03 {transform: scale(1.3) translate(30px) skewX(300deg) rotate3d(0,1,0,720deg);}
+.transform04 {transform: scale(0.8) translate(20px) skewY(720deg) rotate3d(1,1,1,300deg);}
+.transform05 {transform: scale(1.8) translate(20px) skewX(150deg) rotate3d(1,0,1,30deg);}
+</code></pre>
+                <style>
+                    .transform06 {animation: transform06 3s 10 ease;}
+                    @keyframes transform06 {
+                        0% {background: #4facfe; border-radius: 100%; transform: scale(1);}
+                        20% {background: #fa71cd; transform: scale(0.5);}
+                        40% {background: #4facfe; border-radius: 100%; transform: scale(1);}
+                        60% {background: #fa71cd; transform: scale(1.5);}
+                        80% {background: #4facfe;  border-radius: 100%;transform: scale(0.5);}
+                        100% {background: #4facfe; transform: scale(1);}
+                    }
+
+                    .transform07 {animation: transform07 3s 10 ease;}
+                    @keyframes transform07 {
+                        0% {background: #4facfe; width: 140px; border-radius: 50%; transform: rotateY(0deg);}
+                        40% {background: #72fe4f; width: 100px; border-radius: 50%; transform: rotateY(800deg);}
+                        60% {background: #fa71cd; width: 180px; border-radius: 50%; transform: rotateX(500deg);}
+                        100% {background: #4facfe; width: 140px; border-radius: 50%; transform: rotateY(0deg);}
+                    }
+
+                    .transform08 {animation: transform08 3s 10 ease;}
+                    .Ani3 > div {
+                        border-radius: 50%;
+                        background-image: radial-gradient(#88d3ce 20%, #0250c5 20% 40%, #6e45e2 40% 60%, #d43f8d 60% 80% , #88d3ce 80%);
+                    }
+                    @keyframes transform08 {
+                        0% {transform: skewX(0deg) rotate3d(0,0,0,0deg);}
+                        50% {transform: skewX(20deg) rotate3d(1,1,1,500deg);}
+                        100% {transform: skewX(0deg) rotate3d(0,0,0,0deg);}
+                    }
+
+                    .transform09 {animation: transform09 3s 10 ease;}
+                    .Ani4 > div {
+                        border-radius: 100%;
+                        background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 25px, #fda085 25px);
+                    }
+                    @keyframes transform09 {
+                        0% {transform:  translateX(50px) rotate(50deg) translate(40px, 40px);}
+                        50% {transform:  translate(40px, 40px);}
+                        100% {transform: translateX(-50px) rotate(-50deg) translate(-40px, -40px);}
+                    }
+
+                    .transform10 {animation: transform10 4s 10 ease;}
+                    .Ani5 > div {
+                        border-radius: 100%;
+                    }
+                    @keyframes transform10 {
+                        40% {background: #4facfe; transform: rotateX(720deg) rotate3d(1,0,1,500deg); width: 50px; }
+                        60% {background: #72fe4f; transform: rotateX(100deg); width: 100px; }
+                        100% {background: #4facfe; transform: rotateX(720deg) rotate3d(1,0,1,500deg); width: 50px;}
+                        0% {background: #72fe4f; transform: rotateX(100deg); width: 100px; }
+                    }
+                </style>
+
+                <br><br>
+                <h3>Transform Animation</h3>
+                <div class="well clearfix">
+                        <div class="block Ani1">
+                            <div class="transform06">transform06</div>
+                        </div>
+                        <div class="block Ani2">
+                            <div class="transform07">transform07</div>
+                        </div>
+                        <div class="block Ani3">
+                            <div class="transform08">transform08</div>
+                        </div>
+                        <div class="block Ani4">
+                            <div class="transform09">transform09</div>
+                        </div>
+                        <div class="block Ani5">
+                            <div class="transform10">transform10</div>
+                        </div>
+                </div>
+                
+
+
+
+
+            </div>
+            <!--//span12-->
+        </div>
+        <!--//row-fluid-->
+    </div>
+    <!-- //contents -->
+
+    <!-- //footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h5>지성재성</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //footer -->
+    <!-- script -->
+    <script src="../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script src="../assets/js/prism.js"></script>
+</body>
+
+</html>

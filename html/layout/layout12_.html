@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout12</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        bodoy {background-color: #f8f8f8;}
+        #wrap {width: 1200px; margin: 0 auto;}
+        .header {width: 100%; height: 100px; background-color: #999;}
+        .banner {width: 100%; height: 300px; background-color: #888;}
+        #contents01 {overflow: hidden;}
+        .aside01 {width: 33.333%; height: 600px; background-color: #777; float: left;}
+        .aside02 {width: 66.666%; height: 300px; background-color: #666; float: left;}
+        .aside03 {width: 66.666%; height: 300px; background-color: #555; float: left;}
+        #contents02 {overflow: hidden;}
+        .article01 {width: 33.333%; height: 300px; background-color: #444; float: left;}
+        .article02 {width: 33.333%; height: 300px; background-color: #333; float: left;}
+        .article03 {width: 33.333%; height: 300px; background-color: #222; float: left;}
+        #contents03 {}
+        .article04 {width: 92%; height: 200px; background-color: #111; padding: 4%;}
+        .article04 > div {float: left; width: 21%; margin: 2%; height: 150px; background-color: #fff; border-radius: 10px; }
+        .footer {width: 100%; height: 100px; background-color: #000;}
+
+        @media (max-width:1200px) { 
+            #wrap {width:100%;}
+            .article01 {width: 50%;}
+            .article02 {width: 50%;}
+            .article03 {display: none;}
+            .article04 > div {width: 29%;}
+        }
+
+        @media (max-width:768px) { 
+            .article01 {width: 100%;}
+            .article02 {width: 100%;}
+            .article03 {display: none;}
+            .article04 > div {width: 29%;}
+        }
+
+        @media (max-width:480px) { 
+            .aside01 {width: 100%;}
+            .aside02 {width: 100%;}
+            .aside03 {width: 100%;}
+            .article04 {height: 450px;}
+            .article04 > div {width: 96%; height: 100px;}
+            .article04 > div:last-of-type {display: none;}
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header"></header>
+        <header class="banner"></header>
+        <div id="contents01">
+            <aside class="aside01"></aside>
+            <section class="aside02"></section>
+            <section class="aside03"></section>
+         </div>
+        <div id="contents02">
+            <article class="article01"></article>
+            <article class="article02"></article>
+            <article class="article03"></article>
+        </div>
+        <div id="contents03">
+            <article class="article04">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+    
+</body>
+</html>

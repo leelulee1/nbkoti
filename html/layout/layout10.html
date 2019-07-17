@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout10</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap {width: 1200px; height: 900px; margin: 0 auto;}
+        header { width: 100%; height: 150px; background-color: #999;}
+        aside {width: 30%; height: 600px; background-color: #888; float: left;}
+        #section01 {width: 70%; height: 200px; background-color: #777; float: left;}
+        #section02 {width: 70%; height: 200px; background-color: #666;float: left;}
+        #section03 {width: 70%; height: 200px; background-color: #555; float: left;}
+        footer {width: 100%; height: 150px; background-color: #999; clear: both;}
+
+         /* 화면 너비 0 - 1200px */
+         @media (max-width:1200px){
+            #wrap {width:100%;}
+            header {width: 100%; height: 300px;}
+            #section01 {height: 300px; }
+            #section02 {height: 300px;}
+            #section03 {width: 100%;}
+        }
+
+        /* 화면 너비 0 - 768px */
+        @media (max-width:768px){
+            aside {width: 100%; height: 300px;}
+            #section01 {width: 50%;}
+            #section02 {width: 50%;}
+        }
+
+        /* 화면 너비 0 - 480px */
+        @media (max-width:480px){
+            aside {height: 300px;}
+            #section01 {width: 100%; height: 100px;}
+            #section02 {width: 100%; height: 300px;}
+            #section03 {height: 300px;}
+            footer {height: 200px;}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header></header>
+        <aside></aside>
+        <section id="section01"></section>
+        <section id="section02"></section>
+        <section id="section03"></section>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>
