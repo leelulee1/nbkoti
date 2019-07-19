@@ -2,7 +2,7 @@
 
 /* layout */
 #header {border-bottom: 1px solid #ccc;}
-#banner {}
+#banner {position: relative;}
 #content1 {}
 #content2 {}
 #content3 {}
@@ -13,13 +13,30 @@
 /* container */
 .container {width: 1280px; margin: 0 auto;}
 
+/* row */
+.row {padding: 0 28px;}
+
 /* header */
 .header {height: 64px;}
 .header .logo {float: left;}
 .header .logo .lo1 {display: inline-block; margin: 17px 15px 0 0;}
 .header .logo .lo2 {display: inline-block; vertical-align: 8px;}
 .header .menu {float: right;}
-.header .menu ul {border-left:1px solid #ccc;}
+.header .menu ul {border-left:1px solid #ccc; z-index: 1;}
 .header .menu li {float: left; width: 104px; text-align: center; border-right: 1px solid #ccc;}
-.header .menu li a {display: block; padding: 19px 10px; font-size: 18px; color: #333;}
+.header .menu li a {display: block; padding: 19px 10px 18px; font-size: 18px; color: #333;}
+.header .menu li a:hover {background: #f1f1f1;}
+
+/* slider */
+.slider {}
+.slider img {width: 100%;}
+
+/* banner */
+.banner {position: absolute; top: 0; left: 0; width: 100%; top: 25px; }
+.banner .btn {text-align: right;}
+.banner .btn a {display: inline-block; width: 142px; height: 48px; border: 1px solid #583686;
+text-align: center; line-height: 48px; font-size: 18px; margin-left: 13px;}
+.banner .btn a.white {background: #fff; color: #583686 }
+.banner .btn a.purple {background: #583686; color: #fff; border-color: #824aca; color: : #fff;}
+
 
