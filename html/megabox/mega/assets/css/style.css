@@ -3,8 +3,8 @@
 /* layout */
 #header {border-bottom: 1px solid #ccc;}
 #banner {position: relative;}
-#content1 {}
-#content2 {}
+#movie {background: #f2f2f2;}
+#content2 {height: 1000px;}
 #content3 {}
 #content4 {}
 #content5 {}
@@ -29,7 +29,7 @@
 
 /* slider */
 .slider {}
-.slider img {width: 100%;}
+.slider img {width: 100%; display: block;}
 
 /* banner */
 .banner {position: absolute; top: 0; left: 0; width: 100%; top: 25px; }
@@ -39,4 +39,37 @@ text-align: center; line-height: 48px; font-size: 18px; margin-left: 13px;}
 .banner .btn a.white {background: #fff; color: #583686 }
 .banner .btn a.purple {background: #583686; color: #fff; border-color: #824aca; color: : #fff;}
 
+/* movie */
+.movie { padding: 80px 0;}
+.movie .movie_title {
+	margin: 0 auto 74px;
+	width: 805px;
+}
+.movie .movie_title li { float: left; width: 200px; border: 1px solid #ccc; text-align: center; margin-left: -1px; }
+.movie .movie_title li a {display: block; padding: 15px 0; font-size: 18px; color: #666; font-weight: 700;
+}
+.movie .movie_title li.active a {background: #666; color: #fff;}
+.movie .movie_chart {overflow: hidden;}
+.movie .movie_chart > div {float: left; width: 286px; border: 1px solid #ccc; background: #fff;
+margin-right: 24px;}
+.movie .movie_chart > div img {width: 100%;}
+.movie .movie_chart > div:last-child {margin-right: 0;}
+
+.movie .movie_chart .poster {position: relative;}
+.movie .movie_chart .poster .rank {position: absolute; left: 0; top: 31px; width: 45px; height: 45px;
+	background: #39106a; color: #fff; font-size: 20px; text-align: center; line-height: 45px; font-weight: 700;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3); }
+.movie .movie_chart .info { padding: 16px; box-sizing: border-box; }
+.movie .movie_chart .info h3 {}
+.movie .movie_chart .info h3 span {display: inline-block; width: 25px; height: 25px; text-align: center; border-radius: 50%; line-height: 25px;
+	font-size: 12px; color: #fff; margin-right: 7px; vertical-align: 6px;}
+.movie .movie_chart .info h3 span.n12 {background: #1993d2; border: 1px solid #167fb5;}
+.movie .movie_chart .info h3 span.n15 {background: #eba621; border: 1px solid #d6971f;}
+.movie .movie_chart .info h3 span.n19 {background: #f90a0a; border: 1px solid #df0a0a;}
+.movie .movie_chart .info h3 span.nAll {background: #2d9e48; border: 1px solid #26873d;}
+.movie .movie_chart .info h3 strong {font-size: 26px;}
+.movie .movie_chart .info .info_btn {overflow: hidden; margin-top: 15px;}
+.movie .movie_chart .info .info_btn a {float: left; width: 49%; margin-right: 2%;
+padding: 10px; box-sizing: border-box; text-align: center; color: #666; font-size: 18px; background: #f2f2f2;}
+.movie .movie_chart .info .info_btn a:last-child {margin-right: 0%;}
 
