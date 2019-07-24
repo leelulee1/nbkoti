@@ -21,8 +21,8 @@ dl, ul, li, ol, menu {list-style: none;}
 /* 블릿기호  초기화 */
 h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
 
-/* 반응형 이미지 
-img {width: 100%;} */
+/* 반응형 이미지 */
+img {width: 100%; display: block;} 
 
 /* 기울기 초기화 */
 em, address {font-style: normal;}
