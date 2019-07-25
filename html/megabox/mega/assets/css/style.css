@@ -5,9 +5,9 @@
 #header {border-bottom: 1px solid #ccc;}
 #banner {position: relative;}
 #movie {background: #f2f2f2;}
-#event {height: 1000px;}
-#content3 {}
-#content4 {}
+#event {}
+#openning {background: url(../img/open_bg.jpg) no-repeat center center fixed; background-size: cover;}
+#content4 {height: 1000px;}
 #content5 {}
 #footer {}
 
@@ -97,6 +97,20 @@ padding: 10px; box-sizing: border-box; text-align: center; color: #666; font-siz
 .event .event_box .event_left .e2 {float: left; width: 50%;}
 .event .event_box .event_left .e3 {float: left; width: 50%;}
 .event .event_box .event_right {float: left; width: 32%;}
+
+/* openning */
+.openning {padding: 100px 0;  }
+.openning .open {width: 344px; margin: 0 auto 10px auto;}
+.openning .open_num {display: block; width: 207px; margin: 20px auto 20px auto;}
+.openning p {text-align: center; color: #a47936; font-size: 24px; margin-top: 25px;}
+
+.openning .open_box {overflow: hidden; padding: 50px 10% 0; margin-top: 50px;}
+.openning .open_box > div {float: left; width: 28.3333%; margin: 0 2%; height: 200px; color: #fff; font-size: 20px; background: rgba(0,0,0,0.4); border: 1px solid #776162; text-align: center; box-sizing: border-box;}
+.openning .open_box > div h3 {width: 146px; height: 39px; background: #410098; border: 1px solid #5e3d8a; text-align: center; line-height: 39px; margin: -20px auto 20px auto; font-size: 22px;}
+.openning .open_box > div em {display: block;}
+.openning .open_box > div strong {font-size: 30px; font-weight: 700; display: block; margin-bottom: 20px;}
+.openning .open_box > div span {}
+
 
 /* Mediaquery */
 @media (max-width: 1290px) {
