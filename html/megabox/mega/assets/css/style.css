@@ -8,8 +8,8 @@
 #event {}
 #openning {background: url(../img/open_bg.jpg) no-repeat center center fixed; background-size: cover;}
 #new {}
-#content5 {height: 1000px; background: #ccc;}
-#footer {}
+#help {}
+#footer {height: 300px;}
 
 /* container */
 .container {width: 1280px; margin: 0 auto;}
@@ -120,6 +120,24 @@ padding: 10px; box-sizing: border-box; text-align: center; color: #666; font-siz
 .new .new_left .play svg .st1 {fill: #fff;}
 .new .new_right {position: absolute; top: 160px; right: 0; width: 383px; }
 
+/* help */
+.help {}
+.help h3 {font-size: 36px; font-weight: 700; margin-bottom: 20px;}
+.help .help_box1 {float: left; width: 32%; margin-right: 2%; }
+.help .help_box2 {float: left; width: 32%; margin-right: 2%; }
+.help .help_box3 {float: left; width: 32%; margin-right: 0%; }
+.help .help_box1 .notice {border: 1px solid #ccc; height: 334px;}
+.help .help_box2 .card {border: 1px solid #ccc; height: 334px;}
+.help .help_box3 .service {border: 1px solid #ccc; height: 334px;}
+
+/* notice */
+.notice {padding: 20px;}
+.notice ul {overflow: hidden;}
+.notice ul li {float: left; text-align: center; background: #f1f1f1;}
+.notice ul li.active {background: #fff;}
+.notice ul li a {border: 1px solid #ccc; display: block; padding: 10px 20px; width: 80px; margin-right: -1px;}
+.notice ul li ul {}
+.notice ul li ul li {}
 
 
 /* Mediaquery */
