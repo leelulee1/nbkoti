@@ -1,12 +1,71 @@
+* {
+	margin: 0; padding: 0;
+	font-family: 'Roboto', sans-serif;}
+
 body {
 	height: 100vh;
-	background: url(../img/welcome_bg.jpg) no-repeat;
+	background: url(../img/welcome_bg.jpg) center center no-repeat;
 	background-size: cover;
+	position: relative;
 }
 body::after {
 	content: '';
 	position: absolute; left: 0; top: 0;
-	width: 100vh; height: 100vh;
+	width: 100vw; height: 100vh;
 	background: #000;
 	opacity: 0.5;
+	z-index: -1;
 }
+header {
+	height: 85vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column nowrap;
+}
+h1 {font-size: 40px; color: #fff; line-height: 1.33; padding-bottom: 10px; }
+p {font-size: 14px; color: #fff;}
+.btn_wrap {
+	position: absolute; bottom: 20px; left: 0;
+	width: 100%;
+}
+.btn_wrap a {
+	display: block;
+	width: 92%; margin: 1.5vh 4%;
+	height: 56px;
+	line-height: 56px;
+	border-radius: 37px;
+	background-color: #3b5999;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.btn_wrap a.facebook {background-color: #3b5999;}
+.btn_wrap a.naver {background-color: #2db400;}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5),
+	only screen and (min-resolution: 1.5dppx){
+		body{  background: url(../img/welcome_bg@2x.jpg) center center no-repeat; background-size: cover;}
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2.5),
+	only screen and (min-device-pixel-ratio: 2.5),
+	only screen and (min-resolution: 2.5dppx){
+		body{  background: url(../img/welcome_bg@3x.jpg) center center no-repeat; background-size: cover;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
