@@ -279,22 +279,57 @@
 										<ul>
 											<li>
 												<dl>
-													<dt></dt>
-													<dd></dd>
+													<dt><strong>강남1</strong><em>2019.08.05</em></dt>
+													<dd>[드래곤 길들이기3] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다.</dd>
 												</dl>
 											</li>
-											<li>2</li>
-											<li>3</li>
-											<li>4</li>
+											<li>
+												<dl>
+													<dt><strong>강남1</strong><em>2019.08.05</em></dt>
+													<dd>[사자] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다. 당첨자분들은</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt><strong>강남1</strong><em>2019.08.05</em></dt>
+													<dd>[엑시트] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다. 당첨자분들은</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt><strong>강남1</strong><em>2019.08.05</em></dt>
+													<dd>[라이온킹] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다.</dd>
+												</dl>
+											</li>
 										</ul>
 									</li>
 									<li>
 										<a href="#">영화관공지</a>
 										<ul style="display: none;">
-											<li>1</li>
-											<li>2</li>
-											<li>3</li>
-											<li>4</li>
+											<li>
+												<dl>
+													<dt><strong>강남2</strong><em>2019.08.05</em></dt>
+													<dd>[드래곤 길들이기3] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다.</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt><strong>강남2</strong><em>2019.08.05</em></dt>
+													<dd>[사자] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다. 당첨자분들은</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt><strong>강남2</strong><em>2019.08.05</em></dt>
+													<dd>[엑시트] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다. 당첨자분들은</dd>
+												</dl>
+											</li>
+											<li>
+												<dl>
+													<dt><strong>강남2</strong><em>2019.08.05</em></dt>
+													<dd>[라이온킹] 회원 시사회 안내 및 당첨자 발표할 내용을 알려드립니다.</dd>
+												</dl>
+											</li>
 										</ul>
 									</li>
 								</ul>
@@ -313,5 +348,22 @@
 		</div>
 	</section><!-- //content5 -->
 	<footer id="footer"></footer><!-- //footer -->
+	<script src="assets/js/jquery.min.1.12.4.js"></script>
+	<script>
+		var tabMenu= $(".notice"); //클래스 이름을 변수 tabMenu에 저장
+
+		
+		function tabList(e){
+			// 1.버튼을 클릭하면 숨겨진 ul을 보여줌
+			// 2.부모의 li태그에 클래스(active)를 추가
+			// 3.형제의 li태그에 클래스(active)를 삭제
+			// 4.클래스를 제거한 자식 ul을 숨김
+			e.preventDefault(); // #의 기본 기능을 차단
+			var target = $(this);
+			target.next().show().parent("li").addClass("active").siblings("li").removeClass("active").find("ul").hide();
+		}
+		tabMenu.find("ul > li > a").click(tabList);
+
+	</script>
 </body>
 </html>

@@ -126,18 +126,24 @@ padding: 10px; box-sizing: border-box; text-align: center; color: #666; font-siz
 .help .help_box1 {float: left; width: 32%; margin-right: 2%; }
 .help .help_box2 {float: left; width: 32%; margin-right: 2%; }
 .help .help_box3 {float: left; width: 32%; margin-right: 0%; }
-.help .help_box1 .notice {border: 1px solid #ccc; height: 334px;}
-.help .help_box2 .card {border: 1px solid #ccc; height: 334px;}
-.help .help_box3 .service {border: 1px solid #ccc; height: 334px;}
+.help .help_box1 .notice {border: 1px solid #ccc; height: 320px;}
+.help .help_box2 .card {border: 1px solid #ccc; height: 320px;}
+.help .help_box3 .service {border: 1px solid #ccc; height: 320px;}
 
 /* notice */
-.notice {padding: 20px;}
+.notice {position: relative; padding: 20px;}
 .notice ul {overflow: hidden;}
-.notice ul li {float: left; text-align: center; background: #f1f1f1;}
+.notice ul li {float: left; text-align: center; }
 .notice ul li.active {background: #fff;}
 .notice ul li a {border: 1px solid #ccc; display: block; padding: 10px 20px; width: 80px; margin-right: -1px;}
-.notice ul li ul {}
-.notice ul li ul li {}
+.notice ul li ul {position: absolute; top: 70px; left: 20px; width: 90%;	}
+.notice ul li ul li { text-align: left; background: #fff; width: 100%; padding: 16px 0; 
+border-bottom: 1px solid #ccc;}
+.notice ul li ul li:last-child {border: 0;}
+.notice ul li ul li dt strong {position: relative; color: #333; padding-right: 10px;}
+.notice ul li ul li dt strong:after {content: ''; width: 1px; height: 10px; position: absolute; right: 0; top: 5px; background-color: #999;}
+.notice ul li ul li dt em {color: #333; padding-left: 7px;}
+.notice ul li ul li dd {overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #666; }
 
 
 /* Mediaquery */
