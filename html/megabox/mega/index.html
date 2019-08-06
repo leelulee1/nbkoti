@@ -337,21 +337,85 @@
 						</article>
 						<article class="help_box2">
 							<h3>메가박스 할인카드</h3>
-							<div class="card"></div>
+							<div class="card clearfix">
+								<div>
+									<img src="assets/img/card01.jpg" alt="T멤버십 카드">
+									<h4>T 멤버십 할인</h4>
+									<p>영화 2,000원 현장 즉시 할인(1일 5매)</p>
+								</div>
+								<div>
+									<img src="assets/img/card02.jpg" alt="T멤버십 카드">
+									<h4>LG U+</h4>
+									<p>영화 2,000원 현장 즉시 할인(1일 1회 / 월 4회)</p>
+								</div>
+								<div>
+									<img src="assets/img/card03.jpg" alt="T멤버십 카드">
+									<h4>삼성카드 2 V3</h4>
+									<p>영화 2,000원 현장 즉시 할인(1일 5매)</p>
+								</div>
+							</div>
 						</article>
 						<article class="help_box3">
 							<h3>고객센터</h3>
-							<div class="service"></div>
+							<div class="service">
+								<ul class="clearfix">
+									<li><a href="#">1:1문의</a></li>
+									<li><a href="#">단체관람</a></li>
+									<li><a href="#">자주묻는 질문</a></li>
+									<li><a href="#">분실물 문의</a></li>
+								</ul>
+							</div>
 						</article>
 				</div> 
 			</div>	
 		</div>
 	</section><!-- //content5 -->
-	<footer id="footer"></footer><!-- //footer -->
+	<footer id="footer" class="clearfix">
+		<div class="footer">
+			<div class="footer_left">
+				<img src="assets/img/logo_bottom.jpg" alt="로고">
+				<ul>
+					<li><a href="#">회사 소개</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li><a href="#">제휴/광고/부대사업 문의</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">고객센터</a></li>
+					<li><a href="#">윤리경영</a></li>
+				</ul>
+				<div class="add">
+					<p>서울특별시 강남구 도산대로 156, 2층 메가박스중앙(주) (논현동, 중앙엠앤비사옥)</p>
+					<p>대표자명 김진선</p>
+					<p>개인정보보호 책임자 경영지원실 실장 박영진</p>
+					<p>사업자등록번호 211-86-59478</p>
+					<p>통신판매업신고번호 제 833호</p>
+					<p>Copyright 2014 by MegaboxJoongAng Inc. All right reserved</p>
+				</div>
+			</div>
+			<div id="footer_sns">
+				<div class="container">
+					<div class="footer_sns">
+							<ul>
+								<li class="s1"><a href="#"><span class="ir_pm">트위터</span></a></li>
+								<li class="s2"><a href="#"><span class="ir_pm">페이스북</span></a></li>
+								<li class="s3"><a href="#"><span class="ir_pm">인스타그램</span></a></li>
+								<li class="s4"><a href="#"><span class="ir_pm">구글플레이</span></a></li>
+								<li class="s5"><a href="#"><span class="ir_pm">애플스토어</span></a></li>
+							</ul>
+							<div class="tel"><a href="#">ARS<em>1544-0070</em></a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!-- //footer -->
 	<script src="assets/js/jquery.min.1.12.4.js"></script>
 	<script>
 		var tabMenu= $(".notice"); //클래스 이름을 변수 tabMenu에 저장
 
+		tabMenu.find("ul > li > ul").hide();  //2차 메뉴를 숨김
+		tabMenu.find("li.active > ul").show();  //2차(active) 메뉴를 보여줌
+		//.notice ul li ul {display: none;}
 		
 		function tabList(e){
 			// 1.버튼을 클릭하면 숨겨진 ul을 보여줌
