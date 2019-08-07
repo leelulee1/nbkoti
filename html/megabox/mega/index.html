@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 	<meta name="author" content="지성재성">
 	<meta name="description" content="메가박스 사이트 따라하면서 배우는 튜토리얼입니다.">
 	<meta name="keywords" content="메가박스, 유튜브, CGV, 롯데시네마">
@@ -258,7 +258,7 @@
 					</div>
 					<div>
 						<figure class="new_right">
-							<img src="assets/img/new02.jpg" src="assets/img/new02.jpg 1x, assets/img/new02@2.jpg 2x" alt="New Movie">
+							<img src="assets/img/new02.jpg" srcset="assets/img/new02.jpg 1x, assets/img/new02@2.jpg 2x" alt="New Movie">
 						</figure>
 					</div>
 				</div>
@@ -267,6 +267,7 @@
 	</section>
 	<!-- //content4 -->
 	<section id="help">
+		<h2 class="ir_so">help</h2>
 		<div class="container">
 			<div class="row">
 				<div class="help clearfix">
@@ -358,7 +359,7 @@
 						<article class="help_box3">
 							<h3>고객센터</h3>
 							<div class="service">
-								<ul class="clearfix">
+								<ul>
 									<li><a href="#">1:1문의</a></li>
 									<li><a href="#">단체관람</a></li>
 									<li><a href="#">자주묻는 질문</a></li>
@@ -369,46 +370,51 @@
 				</div> 
 			</div>	
 		</div>
-	</section><!-- //content5 -->
-	<footer id="footer" class="clearfix">
-		<div class="footer">
-			<div class="footer_left">
-				<img src="assets/img/logo_bottom.jpg" alt="로고">
-				<ul>
-					<li><a href="#">회사 소개</a></li>
-					<li><a href="#">채용정보</a></li>
-					<li><a href="#">제휴/광고/부대사업 문의</a></li>
-					<li><a href="#">이용약관</a></li>
-					<li><a href="#">개인정보처리방침</a></li>
-					<li><a href="#">고객센터</a></li>
-					<li><a href="#">윤리경영</a></li>
-				</ul>
-				<div class="add">
-					<p>서울특별시 강남구 도산대로 156, 2층 메가박스중앙(주) (논현동, 중앙엠앤비사옥)</p>
-					<p>대표자명 김진선</p>
-					<p>개인정보보호 책임자 경영지원실 실장 박영진</p>
-					<p>사업자등록번호 211-86-59478</p>
-					<p>통신판매업신고번호 제 833호</p>
-					<p>Copyright 2014 by MegaboxJoongAng Inc. All right reserved</p>
+	</section>
+	<!-- //content5 -->
+
+	<footer id="footer">
+		<div id="footer_sns">
+			<div class="container">
+				<div class="footer_sns">
+					<ul>
+						<li class="icon s1"><a href="#"><span class="ir_pm">트위터</span></a></li>
+						<li class="icon s2"><a href="#"><span class="ir_pm">페이스북</span></a></li>
+						<li class="icon s3"><a href="#"><span class="ir_pm">인스타그램</span></a></li>
+						<li class="icon s4"><a href="#"><span class="ir_pm">구글 플레이</span></a></li>
+						<li class="icon s5"><a href="#"><span class="ir_pm">아이폰 앱스토어</span></a></li>
+					</ul>
+					<div class="tel"><a href="#">ARS <em>1544-0900</em></a></div>
 				</div>
 			</div>
-			<div id="footer_sns">
-				<div class="container">
-					<div class="footer_sns">
-							<ul>
-								<li class="s1"><a href="#"><span class="ir_pm">트위터</span></a></li>
-								<li class="s2"><a href="#"><span class="ir_pm">페이스북</span></a></li>
-								<li class="s3"><a href="#"><span class="ir_pm">인스타그램</span></a></li>
-								<li class="s4"><a href="#"><span class="ir_pm">구글플레이</span></a></li>
-								<li class="s5"><a href="#"><span class="ir_pm">애플스토어</span></a></li>
-							</ul>
-							<div class="tel"><a href="#">ARS<em>1544-0070</em></a></div>
+		</div>
+		<div id="footer_info">
+			<div class="container">
+				<div class="row">
+					<div class="footer_info">
+						<h2><img src="assets/img/logo_bottom.jpg" alt="MEGABOX"></h2>
+						<ul>
+							<li><a href="#">회사소개</a></li>
+							<li><a href="#">채용정보</a></li>
+							<li><a href="#">제휴/광고/부대사업 문의</a></li>
+							<li><a href="#">이용약관</a></li>
+							<li><a href="#">개인정보처리방침</a></li>
+							<li><a href="#">고객센터</a></li>
+							<li><a href="#">윤리경영</a></li>
+						</ul>
+						<address>
+							<p>서울 특별시 강남구 도산대로 156, 2층 메가박스중앙(주)(논현동)<br>
+							대표자명 김진선 개인정보보호 책임자 경영지원실 실장 박영진<br>
+							사업자등록번호 211-86-74859 통신판매업신고번호 제 833호</p>
+
+							<p>Copyright 2014 by MegaboxJoonAng Inc. All right reserved</p>
+						</address>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-	</footer><!-- //footer -->
+	</footer>
+	<!-- //footer -->
 	<script src="assets/js/jquery.min.1.12.4.js"></script>
 	<script>
 		var tabMenu= $(".notice"); //클래스 이름을 변수 tabMenu에 저장
