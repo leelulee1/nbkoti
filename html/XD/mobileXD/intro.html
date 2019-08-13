@@ -11,18 +11,18 @@
 </head>
 <style>
 	* {margin: 0; padding: 0;}
-	.gallery {}
+	.gallery {padding: 0 18px;}
 	.container {width: 800px; margin: 0 auto; }
-	.swiper-container {max-width: 100%; padding-bottom: 40px;}
+	.swiper-container {width: 88%; padding-bottom: 40px; margin-top: 15%;}
 	.swiper-container img {width: 100%;}
 	.swiper-pagination-bullet-active {background: #f6b0b0;}
-	.swiper-button-prev {position: absolute; top: auto; bottom: 20px; left: auto; right: 75px; background: #fce0e0 url(img/btn_left.png) center center no-repeat ; background-size: 20px; width: 52px; height: 52px; border-radius: 50%; margin-top: 25px; }
-	.swiper-button-next {position: absolute; top: auto; bottom: 20px; right: 20px; background: #f9cccc url(img/btn_right.png) center center no-repeat ; background-size: 20px; width: 52px; height: 52px; border-radius: 50%; }
+	.swiper-button-prev {position: absolute; top: auto;  bottom: 20px; left: auto; right: 75px; background: #fce0e0 url(img/btn_left.png) center center no-repeat ; background-size: 20px; width: 52px; height: 52px; border-radius: 50%; margin-top: 25px; }
+	.swiper-button-next {position: absolute; top: auto;  bottom: 20px; right: 20px; background: #f9cccc url(img/btn_right.png) center center no-repeat ; background-size: 20px; width: 52px; height: 52px; border-radius: 50%; }
 
-	.contents {position: relative; padding-bottom: 0px;}
-	.contents h1 {font-size: 24px; font-weight: bold; padding-bottom: 10px; margin-top: -50px;}
-	.contents p {font-size: 14px; font-weight: 300; margin-top: 0px;}
-	.row {padding: 0 24px 100px 24px; }
+	.contents {position: relative;}
+	.contents h1 {font-size: 24px; font-weight: bold; margin-bottom: 10px; }
+	.contents p {font-size: 14px; font-weight: 300; padding-bottom: 100px; }
+	.row {padding: 0 18px; margin-top: -50px; }
 
 	@media (max-width: 800px){
 		.container {width: 100%;}
@@ -31,7 +31,7 @@
 	only screen and (min-device-pixel-ratio: 1.5),
 	only screen and (min-resolution: 1.5dppx){
 		.swiper-button-prev {position: absolute; top: auto; bottom: 20px; left: auto; right: 75px; background: #fce0e0 url(img/btn_left@2x.png) center center no-repeat ; background-size: 20px; width: 52px; height: 52px; border-radius: 50%;}
-		.swiper-button-next {position: absolute; top: auto; bottom: 20px; right: 20px; background: #f9cccc url(img/btn_right@2x.png) center center no-repeat ; background-size: 20px; width: 52px; height: 52px; border-radius: 50%;}
+		.swiper-button-next {position: absolute; top: auto; bottom: 10px; right: 20px; background: #f9cccc url(img/btn_right@2x.png) center center no-repeat ; background-size: 20px; width: 52px; height: 52px; border-radius: 50%;}
 	}
 	@media only screen and (-webkit-min-device-pixel-ratio: 2.5),
 		only screen and (min-device-pixel-ratio: 2.5),
@@ -41,38 +41,23 @@
 	}
 </style>
 <body>
-	<!-- <section id="banner">
-		<div class="slideList">
-			<div class="slideImg">
-				<figure>
-					<a href="#"><img src="img/intro_01.png" srcset="img/intro_01.png 1x, img/intro_01@2x.png 2x, img/intro_01@3x.png 3x" alt="banner01"></a>
-				</figure>
-				<figure>
-					<a href="#"><img src="img/intro_02.png" srcset="img/intro_02.png 1x, img/intro_02@2x.png 2x, img/intro_02@3x.png 3x" alt="banner02"></a>
-				</figure>
-				<figure>
-					<a href="#"><img src="img/intro_03.png" srcset="img/intro_03.png 1x, img/intro_03@2x.png 2x, img/intro_03@3x.png 3x" alt="banner03"></a>
-				</figure>
-				<figure>
-					<a href="#"><img src="img/intro_04.png" srcset="img/intro_04.png 1x, img/intro_04@2x.png 2x, img/intro_04@3x.png 3x" alt="banner04"></a>
-				</figure>
-			</div>
-		</div>
-		<div class="text">
-			<h2>Welcome Chench Days</h2>
-			<p>Welcome to the Perfume.com women’s perfumesection where you can get the best deals on perfumes for women from all</p>
-		</div>
-	</section> -->
 		<section id="gallery">
 			<div class="container">
 				<!-- Slides -->
 				<div class="swiper-container">
 					    <div class="swiper-wrapper">
-						        
-						        <div class="swiper-slide"><img src="img/intro_01.jpg" srcset="img/intro_01.jpg 1x, img/intro_01@2x.jpg 2x, img/intro_01@3x.jpg 3x" alt="banner01"></div>
-						        <div class="swiper-slide"><img src="img/intro_02.jpg" srcset="img/intro_02.jpg 1x, img/intro_02@2x.jpg 2x, img/intro_02@3x.jpg 3x" alt="banner02"></div>
-						        <div class="swiper-slide"><img src="img/intro_03.jpg" srcset="img/intro_03.jpg 1x, img/intro_03@2x.jpg 2x, img/intro_03@3x.jpg 3x" alt="banner03"></div>
-						        <div class="swiper-slide"><img src="img/intro_04.jpg" srcset="img/intro_04.jpg 1x, img/intro_04@2x.jpg 2x, img/intro_04@3x.jpg 3x" alt="banner04"></div>
+						        <div class="swiper-slide">
+						        	<img src="img/intro_01.jpg" srcset="img/intro_01.jpg 1x, img/intro_01@2x.jpg 2x, img/intro_01@3x.jpg 3x" alt="banner01">
+						        </div>
+						        <div class="swiper-slide">
+						        	<img src="img/intro_02.jpg" srcset="img/intro_02.jpg 1x, img/intro_02@2x.jpg 2x, img/intro_02@3x.jpg 3x" alt="banner02">
+						        </div>
+						        <div class="swiper-slide">
+						        	<img src="img/intro_03.jpg" srcset="img/intro_03.jpg 1x, img/intro_03@2x.jpg 2x, img/intro_03@3x.jpg 3x" alt="banner03">
+						        </div>
+						        <div class="swiper-slide">
+						        	<img src="img/intro_04.jpg" srcset="img/intro_04.jpg 1x, img/intro_04@2x.jpg 2x, img/intro_04@3x.jpg 3x" alt="banner04">
+						        </div>
 					    </div>
 					    <div class="swiper-pagination"></div>
 				</div>
@@ -90,9 +75,6 @@
 			</div>
 		</section>
 
-
-
-	<script src="js/jquery.min_1.12.4.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script>
   var mySwiper = new Swiper ('.swiper-container', {

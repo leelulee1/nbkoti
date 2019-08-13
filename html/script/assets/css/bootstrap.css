@@ -1409,6 +1409,9 @@ table {
 th {
   text-align: left;
 }
+.table .ce {
+  text-align: center; vertical-align: middle;
+}
 .table {
   width: 100%;
   margin-bottom: 20px;
