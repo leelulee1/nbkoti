@@ -89,7 +89,7 @@
 					<p>자바스크립트 코드는 작성된 순서대로 구문을 분석합니다. 만약 코드에 문제가 생기면 에러가 발생한 다음 줄부터는 구문을 분석하지않는다.</p>
 
 					<h4>- 자바스크립트는 <strong>클라이언트 스크립트 언어</strong>이다.</h4>
-					<p>자바스크립트는 서버에서 실행되지 않고, 사용자 컴퓨터에서 실행되는 클라이언트 언어이다. 서버셍서 운영되는 PHP, ASP, JSP언어와 비교 된다.</p>
+					<p>자바스크립트는 서버에서 실행되지 않고, 사용자 컴퓨터에서 실행되는 클라이언트 언어이다. 서버에서 운영되는 PHP, ASP, JSP언어와 비교 된다.</p>
 
 					<h4>- 자바스크립트는 <strong>객체(object)기반</strong> 언어이다.</h4>
 					<p>C++ JAVA와 같이 클래스를 이용하여 객체를 생성하는 클래스 기반 객체 지향 언어이다. 자바스크립트는 클래스가 아닌 프로토타입을 상속하는 프로토타입 기반 객체 지향 언어이다.</p>
@@ -102,11 +102,11 @@
 				
 
 					<h3 id="intro1-2" class="page-header">자바스크립트 기술적 요소</h3>
-					<h4>ECMASscript</h4>
-					<p>자바스크립트는 ECMA-262 문서로 공개되고 있으며 핵심기술은 ECMAScript로 규정되어 있다. ECMAscript는 ECMA(Ecma International) 라는 조직이 표준화 작업을 하고 있으며, 현재 최신버전은 ECMAscript8 이다.</p>
+					<h4>ECMAscript</h4>
+					<p>자바스크립트는 ECMA-262 문서로 공개되고 있으며 핵심기술은 ECMAscript로 규정되어 있다. ECMAscript는 ECMA(Ecma International) 라는 조직이 표준화 작업을 하고 있으며, 현재 최신버전은 ECMAscript8 이다.</p>
 
 					<h4><strong>클라이언트 언어</strong> 자바스크립트</h4>
-					<p>자바스크립트는 웹 브라우저에 작동되는 클라이언트 언어입니다. 자바스크립트는 ECMASript가 규정한 코어 언어와 웹 브라우저로 구성되어 있다.</p>
+					<p>자바스크립트는 웹 브라우저에 작동되는 클라이언트 언어입니다. 자바스크립트는 ECMAsript가 규정한 <strong>코어 언어</strong>와 <strong>웹 브라우저</strong>로 구성되어 있다.</p>
 					<ul>
 						<li>Window 인터페이스 : 자바스크립트는 브라우저를 조작하는 기능을 제공</li>
 						<li>DOM : 자바스크립트는 HTML 문서를 조작하는 기능을 제공</li>
@@ -217,7 +217,7 @@
 					<h2 id="intro3" class="page-header">변수</h2>
 					<p class="lead">변수는 <strong>하나의 데이터</strong>를 저장하는 저장소입니다.</p>
 
-					<p>변수는 변하는 수를 의미하며, 사용 가능 범위에 전역변수, 지역변수, 매게변수, 멤버변수로 나눌 수 있으며, 변수는 식별자로 구분해야 하기 때문에 변수에는 숫자, 문자열, 불린, 함수, 객체 등을 사용할 수 있습니다.</p>
+					<p>변수는 변하는 수를 의미하며, 사용 가능 범위에 전역변수, 지역변수, 매개변수, 멤버변수로 나눌 수 있으며, 변수는 식별자로 구분해야 하기 때문에 변수에는 숫자, 문자열, 불린, 함수, 객체 등을 사용할 수 있습니다.</p>
 
 					<h3 id="intro3-1" class="page-header">변수 선언</h3>
 					<div class="panel panel-default">
@@ -238,7 +238,7 @@
 					<h4>식별자를 만드는 규칙</h4>
 					<ul>
 						<li>사용자가 사용할 수 있는 문자 알파벳(a~z,A~Z), 숫자(0~9), 밑줄(_), 달러기호($)</li>
-						<li>첫 글자는 숫자를 사용할 수 없습니다. 첫글자 알파벳(a~z,A~Z), 밑줄(_), 달러기호($) 중 하나여야 합니다.</li>
+						<li>첫 글자는 숫자를 사용할 수 없고 첫글자는 알파벳(a~z,A~Z), 밑줄(_), 달러기호($) 중 하나여야 합니다.</li>
 						<li>공백을 주면 안됨 : 밑줄(_) 사용 가능, 하이픈(-) 사용안됨</li>
 						<li>특수 기호를 사용할 수 없습니다.</li>
 						<li>키워드(예약어)를 사용 할 수 없습니다.</li>
@@ -257,7 +257,7 @@
 								<strong>지역변수</strong> : 특정 범위 안에서만 사용하는 변수 <br>
 								<strong>전역변수</strong> : 모든 영역 안에서 사용하는 변수<br>
 								<strong>매개변수(파라미터)</strong> : 함수 외부에서 함수 내부로 데이터를 전달하기 위한 변수<br>
-								<strong>멤버변수(프로퍼티)</strong> : 클래스 내부에서 만들어지면 주로 객체에서 사용하는 변수
+								<strong>멤버변수(프로퍼티)</strong> : 클래스 내부에서 만들어지며 주로 객체에서 사용하는 변수
 						</div>
 					</div>
 
@@ -356,7 +356,6 @@
 					<h3 id="intro3-4" class="page-header">변수 유형(자료형)</h3>
 					<div class="table-responsive">
 						<table class="table table-striped table-bordered table-hover">
-							<caption class="cap">변수 유형의 데이터 타입 표</caption>
 							<colgroup>
 								<col>
 								<col>
@@ -399,7 +398,7 @@
 					</div>
 
 					<h4 class="page-header">문자형</h4>
-					<p>문자형(String)데이터는다음과 같이 문자나 숫자를 큰따옴표("") 또는 작은 따옴표('')로 감싸고 있다. 또한 문자형 데이터에 HTML 태그를 포함하여
+					<p>문자형(String)데이터는 다음과 같이 문자나 숫자를 큰따옴표("") 또는 작은 따옴표('')로 감싸고 있다. 또한 문자형 데이터에 HTML 태그를 포함하여
 					출력하면 태그로 인식합니다.</p>
 					<div class="panel panel-default">
 						  <div class="panel-body">
@@ -413,8 +412,8 @@ var tag ="<h1>String</h1>";
 </code></pre>
 </div>
 					<h4 class="page-header">숫자형</h4>
-					<p>숫자형(Number) 데이터는 단어 의미 그대로 숫자를 의미한다. 만약 "100" 과 같은큰따옴표가 숫자를 감싸고 있다면
-					숫자가 아닌 문자형 데이터이다. 이 경우에는 Number("100")를 이용하면 문자형 데이터를 수자형 데이터로 바꿀 수 있다.</p>
+					<p>숫자형(Number) 데이터는 단어 의미 그대로 숫자를 의미한다. 만약 "100" 과 같은 큰따옴표가 숫자를 감싸고 있다면
+					숫자가 아닌 문자형 데이터이다. 이 경우에는 Number("100")를 이용하면 문자형 데이터를 숫자형 데이터로 바꿀 수 있다.</p>
 					<div class="panel panel-default">
 						  <div class="panel-body">
 						  	기본형 : var 변수 = 숫자; 또는 Number("문자형 숫자");
@@ -439,7 +438,7 @@ var t = 10&lt;= 100;         //false
 var k = Boolean("hello");   //true
 </code></pre>
 </div>
-					<p>Boolean()메서드에 데이터를입력하면 논리형 데이터인 true 또는 false 를 반환한다. Boolean()메서드는 숫자 0과 null, undefined, 빈 문자("")를 제외한 모든 데이터에 대해 true를 반환한다.
+					<p>Boolean()메서드에 데이터를 입력하면 논리형 데이터인 true 또는 false 를 반환한다. Boolean()메서드는 숫자 <strong>0과 null, undefined, 빈 문자("")를 제외한 모든 데이터에 대해 true를 반환한다.</strong><br>
 					다음과 같이 Boolean() 멤서드에 숫자 0을 입력하면 false 라는 값을 반환한다. 그리고 Boolean()메서드에 "홍길동"을 입력하면 true를 반환한다.</p>
 <div class=" language-javascript">
 <pre><code>var m = Boolean(0)     //false
@@ -739,7 +738,7 @@ var k = Boolean("홍길동")      //true
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>	
-					<h3 id="intro5-2" class="page-header">복합 연산자</h3>
+					<h3 id="intro5-2" class="page-header">대입 연산자</h3>
 					<div class="table-responsive">
 						<table class="table table-striped table-bordered table-hover">
 							<colgroup>
@@ -784,12 +783,12 @@ var k = Boolean("홍길동")      //true
 							</tbody>
 						</table>
 					</div>
-					<h4>복합 연산자 <a href="javascript:popup8();"><span class="label label-info">view</span></a></h4>
+					<h4>대입 연산자 <a href="javascript:popup8();"><span class="label label-info">view</span></a></h4>
 <pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
 	&lt;meta charset="UTF-8"&gt;
-	&lt;title&gt;복합 연산자&lt;/title&gt;
+	&lt;title&gt;대입 연산자&lt;/title&gt;
 	&lt;script&gt;
 		var x = 10;
 		var y = 20;
@@ -820,7 +819,7 @@ var k = Boolean("홍길동")      //true
 &lt;/html&gt;
 </code></pre>	
 					
-					<h4>복합 연산자를 이용한 테이블 만들기 <a href="javascript:popup9();"><span class="label label-info">view</span></a></h4>
+					<h4>대입 연산자를 이용한 테이블 만들기 <a href="javascript:popup9();"><span class="label label-info">view</span></a></h4>
 <pre class="line-numbers language-markup"><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -1081,7 +1080,8 @@ var k = Boolean("홍길동")      //true
 		document.write( a &gt; 200 || 50 &lt; b);						//false
 		document.write("&lt;br&gt;");	
 		document.write( !(a &gt; 200));								//true
-		document.write("&lt;br&gt;");	
+		document.write("&lt;br&gt;");
+
 
 	&lt;/script&gt;
 &lt;/head&gt;
@@ -1090,11 +1090,57 @@ var k = Boolean("홍길동")      //true
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>	
-					<h3 id="intro5-6" class="page-header">연산자 우선순위</h3>
+					<h3 id="intro5-6" class="page-header">문자 결합 연산자</h3>
+					<h4>논리 연산자 <a href="javascript:popup13();"><span class="label label-info">view</span></a></h4>
+<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;문자 결합 연산자&lt;/title&gt;
+&lt;/head&gt;
+	&lt;script&gt;
+		var x1 = 100;			//숫자(number)
+		var x2 = "javascript"	//문자(string)
+		var x3 = "100";			//문자(string)
+		var x4 = "200";			//문자(string)
+
+		document.write(typeof(x1));
+		document.write("&lt;br&gt;")
+		document.write(x1 + 100);		//숫자 + 숫자
+		document.write("&lt;br&gt;")
+		document.write(x1 + x2);		//숫자 + 문자
+		document.write("&lt;br&gt;")
+		document.write(x3 + x4);		//문자 + 문자
+		document.write("&lt;br&gt;")
+		document.write(x1 + true);		//숫자 + boolean
+		document.write("&lt;br&gt;")
+		document.write(x1 + null);		//숫자 + 특수값
+		document.write("&lt;br&gt;")
+		document.write(true + true);	//boolean + boolean
+		document.write("&lt;br&gt;")
+		document.write(true + false);	//boolean + boolean
+		document.write("&lt;br&gt;")
+		document.write(true + null);	//boolean + 특수값
+		document.write("&lt;br&gt;");	
+
+		x1 = "" + x1;  //숫자를 문자열로 형 변환
+		document.write(x1);
+		document.write("&lt;br&gt;")
+		document.write(typeof(x1));
+
+	&lt;/script&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+					<h3 id="intro5-7" class="page-header">연산자 우선순위</h3>
 					<div class="table-responsive">
 						<table class="table table-striped table-bordered table-hover">
 							<colgroup>
-								<col width="33%">
+								<col>
 								<col>
 								<col>
 							</colgroup>
@@ -1107,24 +1153,271 @@ var k = Boolean("홍길동")      //true
 							</thead>
 							<tbody>
 								<tr>
-									<td><code>+</code></td>
-									<td>x + y</td>
-									<td>더하기</td>
+									<td>1</td>
+									<td>괄호/대괄호</td>
+									<td>()[]</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>단항 연산자</td>
+									<td><code>!</code>, <code>++</code>, <code>--</code></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>곱셈/나눔셈 연산자</td>
+									<td><code>*</code>, <code>/</code>, <code>%</code></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>덧셈/뺄셈 연산자</td>
+									<td><code>+</code>, <code>-</code></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>비교 연산자</td>
+									<td><code>&gt;</code>, <code>&gt;=</code>, <code>&lt;</code>, <code>&lt;=</code></td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>비교 연산자</td>
+									<td><code>==</code>, <code>===</code>, <code>!=</code>, <code>!==</code></td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>논리 곱 연산자</td>
+									<td><code>&&</code></td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td>논리 합 연산자</td>
+									<td><code>||</code></td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td>대입 연산자</td>
+									<td><code>=</code>, <code>+=</code>, <code>-=</code>, <code>*=</code>, <code>/=</code>, <code>%=</code></td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td>쉼표</td>
+									<td><code>,</code></td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-					<h4>연산자 우선순위 <a href="javascript:popup12();"><span class="label label-info">view</span></a></h4>
-<pre class="line-numbers language-markup"><code>
+					
+					<h3 id="intro5-8" class="page-header">정리</h3>
+					<h4>적정 체중 테스트 만들기 <a href="javascript:popup14();"><span class="label label-info">view</span></a></h4>
+<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;적정 체중 구하기&lt;/title&gt;
+	&lt;script&gt;
+		//적정 체중 = (본인 신장 - 100) * 0.9;
 
-</code></pre>	
+		// var userHegiht = 174; 	//키
+		// var userWeight = 90;	//몸무게
+		// var normal = (userHegiht - 100) * 0.9;
+
+		var name = prompt("당신의 이름은?","");
+		var height = prompt("당신의 키는?", "0");
+		var weight = prompt("당신의 몸무게는?", "0");
+
+		var normal = (height - 100) * 0.9;
+		var result = weight &gt;= normal - 5 && weight &lt;= normal + 5;
+		//console.log(result);
+		result = result ? "적정 체중입니다." : "적정 체중이 아닙니다.";
+		document.write(name +"님은 "+ result);
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					<h4>지출 내역 만들기 <a href="javascript:popup15();"><span class="label label-info">view</span></a></h4>
+<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;Document&lt;/title&gt;
+	&lt;script&gt;
+		// var price1 = 3000;
+		// var price2 = 6000;
+		// var price3 = 3000;
+
+		// var total = price1 + price2 + price3;
+		// var result =  total &gt; 10000  ? "초과되었습니다." : "돈 관리 잘했어요!";
+
+		var price1 = prompt("당신의 교통비는?");
+		var price2 = prompt("당신의 식비는?");
+		var price3 = prompt("당신의 음료비?");
+
+		price1 = Number(price1);
+		price2 = Number(price2);
+		price3 = Number(price3);
+
+		var total = price1 + price2 + price3;
+		
+		console.log(total);
+		var result =  total &gt; 10000  ? total - 10000 + "초과되었습니다." : "돈 관리 잘했어요!";
+
+		document.write(result);
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
 				</div>
 				<!-- //Introduction -->
 
 				<!-- Introduction -->
 				<div class="bs-docs-section">
 					<h2 id="intro6" class="page-header">조건문</h2>
-					<p class="lead">자바스크립트는</p>
+					<p class="lead">조건문은 조건식에 따라 참(true)인지, 거짓(false)인지에 따라 자바스크립트 코드를 제어하는 제어문입니다.</p>
+
+					<h3 id="intro6-1" class="page-header">if문</h3>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							if(조건식){<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;//실행 코드<br>
+						}
+						</div>
+					</div>
+					<h4>if문 <a href="javascript:popup16();"><span class="label label-info">view</span></a></h4>
+<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;if문&lt;/title&gt;
+	&lt;script&gt;
+		var x = 100;	//변수 x에 숫자를 100을 저장
+
+		if(x &gt; 200){	//변수 x가 200보다 크면 실행(true)
+			document.write(x);
+		}
+
+		if(x &lt; 200){	//변수 x가 200보다 작으면 실행(true)
+			document.write(x,"&lt;br&gt;");
+		}
+
+		if(true){	
+			document.write(x,"&lt;br&gt;");
+		}
+
+		if(false){	
+			document.write(x,"&lt;br&gt;");
+		}
+
+		//통화량 구분하기
+		var min = prompt("당신의 하루 통화량은 몇 분인가요?", "0");
+		if(min &gt; 60){
+			document.write("당신은 전화를 많이쓰네요~&lt;br&gt;");
+		}
+
+		//짝수 구분하기
+		var num = prompt("숫자를 입력해 주세요!!&lt;br&gt;", "0");
+
+		if(num % 2 == 0){
+			document.write("당신이 입력한 숫자는 짝수입니다.&lt;br&gt;");
+		}
+
+		//조건식에 논리형 데이터가 아닌 다른 형이 오는 경우
+		//0, null, ""(빈문자), undefined --&gt; false 이외의 값은 true
+		var y = 100;
+
+		if(y){
+			document.write(y,"&lt;br&gt;");
+		}
+
+		var useName = prompt("당신의 이름은 무엇입니다.","");
+		if(useName){
+			document.write(useName + "님 방갑습니다.");
+		}
+		//document.write(useName + "님 방갑습니다.");
+		
+		//if(useName) document.write(useName + "님 방갑습니다.");
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					<h3 id="intro6-2" class="page-header">if ~ else문</h3>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							if(조건식){<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;//참(true)일 때 실행 코드<br>
+							} else if {<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;//거짓(false)일 때 실행 코드<br>
+							}
+						</div>
+					</div>
+					<h4>if ~ else <a href="javascript:popup17();"><span class="label label-info">view</span></a></h4>
+<pre class="line-numbers language-markup"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;title&gt;if ~ else문&lt;/title&gt;
+	&lt;script&gt;
+		//홀수 짝수 구분하기
+		var num = prompt("당신이 좋아하는 숫자는?");
+
+		if(num % 2 == 0){
+			document.write("당신이 좋아하는 숫자는 짝수입니다.&lt;br&gt;");
+		} else {
+			document.write("당신이 좋아하는 숫자는 홀수입니다.&lt;br&gt;");
+		}
+
+		//아이디 비밀번호 구분하기
+		var userID = prompt("아이디를 입력해주세요~");
+		var userPW = prompt("비밀번호를 입력해주세요~");
+
+		if(userID == "nbkoti" && userPW == "1234"){
+			document.write("환영합니다.&lt;br&gt;");
+		} else {
+			document.write("아이디 또는 비밀번호가 틀렸습니다.&lt;br&gt;");
+		}
+
+		//확인하기
+		var result = confirm("정말로 회원을 탈퇴하시겠습니까?");
+
+		if(result){
+			document.write("탈퇴 처리되었습니다.");
+		} else {
+			document.write("탈퇴 취소되었습니다.");
+		}
+	&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+					<h3 id="intro6-3" class="page-header">다중 if문</h3>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							if(조건식){<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//참(true)일 때 실행 코드<br>
+						} else if {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//앞 조건이 거짓(false)일때 실행 코드<br>
+						} else if {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//앞 조건이 거짓(false)일때 실행 코드<br>	
+						} else {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;//앞의 모든 조건이 거짓(false)일때 실행 코드	<br>
+						}
+						</div>
+					</div>
+					<h4>다중 if문 <a href="javascript:popup18();"><span class="label label-info">view</span></a></h4>
+<pre class="line-numbers language-markup"><code>
+</code></pre>
+					<h3 id="intro6-4" class="page-header">switch문</h3>
+					<h3 id="intro6-5" class="page-header">조건부(삼항) 연산자</h3>
 				</div>
 				<!-- //Introduction -->
 
@@ -1206,17 +1499,41 @@ var k = Boolean("홍길동")      //true
 								<li><a href="#intro3-5">+ 변수 검사</a></li>
 							</ul>
 						</li>
-						<li><a href="#intro4">배열</a></li>
+						<li><a href="#intro4">배열</a>
+							<ul class="nav">
+								<li><a href="#intro4-1">+ 배열</a></li>
+								<li><a href="#intro4-2">+ 배열 메서드 및 속성</a></li>
+							</ul>
+						</li>
 						<li><a href="#intro5">연산자</a>
 							<ul class="nav">
 								<li><a href="#intro5-1">+ 산출 연산자</a></li>
-								<li><a href="#intro5-2">+ 복합 연산자</a></li>
+								<li><a href="#intro5-2">+ 대입 연산자</a></li>
 								<li><a href="#intro5-3">+ 증감 연산자</a></li>
 								<li><a href="#intro5-4">+ 비교 연산자</a></li>
 								<li><a href="#intro5-5">+ 논리 연산자</a></li>
+								<li><a href="#intro5-6">+ 문자열 결합 연산자</a></li>
+								<li><a href="#intro5-7">+ 연산자 우선순위</a></li>
 							</ul>
 						</li>
-						<li><a href="#intro6">조건문</a></li>
+						<li><a href="#intro6">조건문</a>
+							<ul class="nav">
+								<li><a href="#intro6-1">+ if문</a></li>
+								<li><a href="#intro6-2">+ if문 ~ else문</a></li>
+								<li><a href="#intro6-3">+ 다중 if문</a></li>
+								<li><a href="#intro6-4">+ switch문</a></li>
+								<li><a href="#intro6-5">+ 조건부(삼항) 연산자</a></li>
+							</ul>
+						</li>
+						<li><a href="#intro7">반복문</a>
+							<ul class="nav">
+								<li><a href="#intro7-1">+while문</a></li>
+								<li><a href="#intro7-2">+ do ~ while문</a></li>
+								<li><a href="#intro7-3">+ for문</a></li>
+								<li><a href="#intro7-4">+ 다중 for문</a></li>
+								<li><a href="#intro7-5">+ break, continue문</a></li>
+							</ul>
+						</li>
 						<li><a href="#intro7">함수</a></li>
 						<li><a href="#intro8">객체</a></li>
 						<li><a href="#intro9">내장객체</a></li>
@@ -1290,6 +1607,24 @@ var k = Boolean("홍길동")      //true
         }
         function popup12(){
         window.open('javascript12.html','팝업창','width=600, height=400, left=150, top=150');
+        }
+        function popup13(){
+        window.open('javascript13.html','팝업창','width=600, height=400, left=150, top=150');
+        }
+        function popup14(){
+        window.open('javascript14.html','팝업창','width=600, height=400, left=150, top=150');
+        }
+        function popup15(){
+        window.open('javascript15.html','팝업창','width=600, height=400, left=150, top=150');
+        }
+        function popup16(){
+        window.open('javascript16.html','팝업창','width=600, height=400, left=150, top=150');
+        }
+        function popup17(){
+        window.open('javascript17.html','팝업창','width=600, height=400, left=150, top=150');
+        }
+        function popup18(){
+        window.open('javascript18.html','팝업창','width=600, height=400, left=150, top=150');
         }
     </script>
 
